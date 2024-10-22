@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Admin.cs">
+    <Compile Update="Forms\Admin\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminAddNewUser.cs">
+    <Compile Update="Forms\Admin\AdminAddNewUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminCheckAllUsers.cs">
+    <Compile Update="Forms\Admin\AdminCheckAllUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminDeleteUser.cs">
+    <Compile Update="Forms\Admin\AdminDeleteUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Librarian.cs">
+    <Compile Update="Forms\Librarian\Librarian.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LibrarianAddbook.cs">
+    <Compile Update="Forms\Librarian\LibrarianAddbook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LibrarianCheckBook.cs">
+    <Compile Update="Forms\Librarian\LibrarianCheckBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LibrarianDeleteBook.cs">
+    <Compile Update="Forms\Librarian\LibrarianDeleteBook.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">
@@ -31,19 +31,19 @@
     <Compile Update="Signup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Student.cs">
+    <Compile Update="Forms\Student\Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="StudentBorrowBook.cs">
+    <Compile Update="Forms\Student\StudentBorrowBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="StudentCheckAllBooks.cs">
+    <Compile Update="Forms\Student\StudentCheckAllBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="StudentCheckBorrowHistory.cs">
+    <Compile Update="Forms\Student\StudentCheckBorrowHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="StudentReturnBook.cs">
+    <Compile Update="Forms\Student\StudentReturnBook.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
