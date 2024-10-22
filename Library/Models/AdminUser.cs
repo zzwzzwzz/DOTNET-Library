@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Library.Models
 {
-    internal class AdminUser
+    public class AdminUser : User
     {
+        public override string GetUserType() => "Admin";
     }
 }

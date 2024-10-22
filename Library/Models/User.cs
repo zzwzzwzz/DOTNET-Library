@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Library.Models
 {
-    internal class User
+    public abstract class User
     {
+        public required string UserId { get; set; }
+        public required string Username { get; set; }
+        public required string Password { get; set; }
+        public abstract string GetUserType();
     }
 }

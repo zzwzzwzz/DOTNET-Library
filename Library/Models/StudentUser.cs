@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Library.Models
 {
-    internal class StudentUser
+    public class StudentUser : User
     {
+        public override string GetUserType() => "Student";
     }
 }

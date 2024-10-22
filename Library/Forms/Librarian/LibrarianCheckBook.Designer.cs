@@ -42,19 +42,19 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft YaHei UI", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            label1.Location = new Point(294, 46);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(404, 58);
             label1.Name = "label1";
-            label1.Size = new Size(218, 36);
+            label1.Size = new Size(276, 45);
             label1.TabIndex = 2;
             label1.Text = "Check All Book";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(69, 112);
+            listBox1.Location = new Point(95, 140);
+            listBox1.Margin = new Padding(4, 4, 4, 4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(676, 304);
+            listBox1.Size = new Size(928, 379);
             listBox1.TabIndex = 3;
             // 
             // menuStrip1
@@ -63,43 +63,45 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, addBookToolStripMenuItem, deleteBookToolStripMenuItem, allBookToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Padding = new Padding(8, 2, 0, 2);
+            menuStrip1.Size = new Size(1100, 33);
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(60, 24);
+            menuToolStripMenuItem.Size = new Size(82, 29);
             menuToolStripMenuItem.Text = "Menu";
             // 
             // addBookToolStripMenuItem
             // 
             addBookToolStripMenuItem.Name = "addBookToolStripMenuItem";
-            addBookToolStripMenuItem.Size = new Size(89, 24);
+            addBookToolStripMenuItem.Size = new Size(117, 29);
             addBookToolStripMenuItem.Text = "Add Book";
             // 
             // deleteBookToolStripMenuItem
             // 
             deleteBookToolStripMenuItem.Name = "deleteBookToolStripMenuItem";
-            deleteBookToolStripMenuItem.Size = new Size(105, 24);
+            deleteBookToolStripMenuItem.Size = new Size(139, 29);
             deleteBookToolStripMenuItem.Text = "Delete Book";
             // 
             // allBookToolStripMenuItem
             // 
             allBookToolStripMenuItem.Name = "allBookToolStripMenuItem";
-            allBookToolStripMenuItem.Size = new Size(79, 24);
+            allBookToolStripMenuItem.Size = new Size(103, 29);
             allBookToolStripMenuItem.Text = "All Book";
             // 
             // LibrarianCheckBook
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1100, 562);
             Controls.Add(listBox1);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "LibrarianCheckBook";
             Text = "LibrarianCheckBook";
             menuStrip1.ResumeLayout(false);

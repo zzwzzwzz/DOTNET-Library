@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.Models
+namespace Library.Tests
 {
-    public class LibrarianUser : User
+    internal class AdminServiceTests
     {
-        public override string GetUserType() => "Librarian";
     }
 }
