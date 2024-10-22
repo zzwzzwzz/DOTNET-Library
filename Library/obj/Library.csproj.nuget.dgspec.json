@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Prakai\\Desktop\\Library\\Library\\Library.csproj": {}
+    "C:\\Users\\Zhouzhou\\Source\\Repos\\Library\\Library\\Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Prakai\\Desktop\\Library\\Library\\Library.csproj": {
+    "C:\\Users\\Zhouzhou\\Source\\Repos\\Library\\Library\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Prakai\\Desktop\\Library\\Library\\Library.csproj",
+        "projectUniqueName": "C:\\Users\\Zhouzhou\\Source\\Repos\\Library\\Library\\Library.csproj",
         "projectName": "Library",
-        "projectPath": "C:\\Users\\Prakai\\Desktop\\Library\\Library\\Library.csproj",
-        "packagesPath": "C:\\Users\\Prakai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Prakai\\Desktop\\Library\\Library\\obj\\",
+        "projectPath": "C:\\Users\\Zhouzhou\\Source\\Repos\\Library\\Library\\Library.csproj",
+        "packagesPath": "C:\\Users\\Zhouzhou\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zhouzhou\\Source\\Repos\\Library\\Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Prakai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Zhouzhou\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

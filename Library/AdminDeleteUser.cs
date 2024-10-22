@@ -31,5 +31,10 @@ namespace Library
         {
 
         }
+
+        private void AdminDeleteUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

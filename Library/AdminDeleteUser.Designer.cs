@@ -100,25 +100,25 @@
             // menuToolStripMenuItem
             // 
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(82, 30);
+            menuToolStripMenuItem.Size = new Size(82, 29);
             menuToolStripMenuItem.Text = "Menu";
             // 
             // borrowToolStripMenuItem
             // 
             borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(112, 30);
+            borrowToolStripMenuItem.Size = new Size(112, 29);
             borrowToolStripMenuItem.Text = "Add User";
             // 
             // returnToolStripMenuItem
             // 
             returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(134, 30);
+            returnToolStripMenuItem.Size = new Size(134, 29);
             returnToolStripMenuItem.Text = "Delete User";
             // 
             // allBooksToolStripMenuItem
             // 
             allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(107, 30);
+            allBooksToolStripMenuItem.Size = new Size(107, 29);
             allBooksToolStripMenuItem.Text = "All Users";
             // 
             // AdminDeleteUser
@@ -134,6 +134,7 @@
             Controls.Add(button1);
             Name = "AdminDeleteUser";
             Text = "AdminDeleteUser";
+            Load += AdminDeleteUser_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

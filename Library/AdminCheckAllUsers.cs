@@ -26,5 +26,10 @@ namespace Library
         {
 
         }
+
+        private void AdminCheckAllUsers_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

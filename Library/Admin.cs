@@ -24,7 +24,9 @@ namespace Library
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            // Open the form to add a new user
+            AdminAddNewUser addNewUserForm = new AdminAddNewUser();
+            addNewUserForm.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -44,7 +46,9 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            // Open the form for checking all users
+            AdminCheckAllUsers checkAllUsersForm = new AdminCheckAllUsers();
+            checkAllUsersForm.ShowDialog();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -60,6 +64,13 @@ namespace Library
         private void checkAllUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Open the form to delete a user
+            AdminDeleteUser deleteUserForm = new AdminDeleteUser();
+            deleteUserForm.ShowDialog();
         }
     }
 }
