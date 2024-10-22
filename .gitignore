@@ -1,0 +1,26 @@
+# Ignore Visual Studio temporary files and caches
+.vs/
+*.suo
+*.user
+*.cache
+*.vscode/
+
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore auto-generated assembly info
+AssemblyInfo.cs
+
+# Ignore NuGet and build-related files
+*.dll
+*.exe
+*.pdb
+*.nuget
+*.dgspec.json
+*.targets
+*.props
+*.g.*
+
+# Ignore build-specific JSON and cache files
+*.json
