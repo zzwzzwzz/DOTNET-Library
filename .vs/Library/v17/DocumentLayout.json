@@ -1,0 +1,378 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\adminaddnewuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\adminaddnewuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\admincheckallusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\admincheckallusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\admindeleteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\admindeleteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|C:\\Users\\Zhouzhou\\source\\repos\\Library\\library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\studentreturnbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\studentreturnbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\studentcheckborrowhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\studentcheckborrowhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\studentcheckallbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\studentcheckallbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\studentborrowbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\studentborrowbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\adminaddnewuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\adminaddnewuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\admincheckallusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\admincheckallusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\admindeleteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\admindeleteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\admin.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\admin.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|c:\\users\\zhouzhou\\source\\repos\\library\\library\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB44F8A4-10E9-4A8B-9BCB-CF013E6DD11E}|Library\\Library.csproj|solutionrelative:library\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminCheckAllUsers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminCheckAllUsers.cs",
+              "RelativeDocumentMoniker": "Library\\AdminCheckAllUsers.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminCheckAllUsers.cs [Design]",
+              "RelativeToolTip": "Library\\AdminCheckAllUsers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T06:40:03.06Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminAddNewUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminAddNewUser.cs",
+              "RelativeDocumentMoniker": "Library\\AdminAddNewUser.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminAddNewUser.cs [Design]",
+              "RelativeToolTip": "Library\\AdminAddNewUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T06:40:55.096Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Admin.cs",
+              "RelativeDocumentMoniker": "Library\\Admin.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Admin.cs [Design]",
+              "RelativeToolTip": "Library\\Admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T06:07:49.317Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Login.cs",
+              "RelativeDocumentMoniker": "Library\\Login.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Login.cs",
+              "RelativeToolTip": "Library\\Login.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAvwB8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:12:32.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminDeleteUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminDeleteUser.cs",
+              "RelativeDocumentMoniker": "Library\\AdminDeleteUser.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminDeleteUser.cs [Design]",
+              "RelativeToolTip": "Library\\AdminDeleteUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T16:23:15.682Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Login.cs",
+              "RelativeDocumentMoniker": "Library\\Login.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Login.cs [Design]",
+              "RelativeToolTip": "Library\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T07:35:17.159Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentReturnBook.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\StudentReturnBook.cs",
+              "RelativeDocumentMoniker": "Library\\StudentReturnBook.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\StudentReturnBook.cs [Design]",
+              "RelativeToolTip": "Library\\StudentReturnBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T02:22:34.608Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentCheckBorrowHistory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\StudentCheckBorrowHistory.cs",
+              "RelativeDocumentMoniker": "Library\\StudentCheckBorrowHistory.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\StudentCheckBorrowHistory.cs [Design]",
+              "RelativeToolTip": "Library\\StudentCheckBorrowHistory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T02:25:38.065Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentCheckAllBooks.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\StudentCheckAllBooks.cs",
+              "RelativeDocumentMoniker": "Library\\StudentCheckAllBooks.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\StudentCheckAllBooks.cs [Design]",
+              "RelativeToolTip": "Library\\StudentCheckAllBooks.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T02:25:10.166Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentBorrowBook.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\StudentBorrowBook.cs",
+              "RelativeDocumentMoniker": "Library\\StudentBorrowBook.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\StudentBorrowBook.cs [Design]",
+              "RelativeToolTip": "Library\\StudentBorrowBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T02:22:05.963Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Student.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Student.cs",
+              "RelativeDocumentMoniker": "Library\\Student.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Student.cs [Design]",
+              "RelativeToolTip": "Library\\Student.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T01:48:17.783Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminAddNewUser.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminAddNewUser.cs",
+              "RelativeDocumentMoniker": "Library\\AdminAddNewUser.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminAddNewUser.cs",
+              "RelativeToolTip": "Library\\AdminAddNewUser.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAcwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T06:44:09.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminCheckAllUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminCheckAllUsers.cs",
+              "RelativeDocumentMoniker": "Library\\AdminCheckAllUsers.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminCheckAllUsers.cs",
+              "RelativeToolTip": "Library\\AdminCheckAllUsers.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAcwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T07:48:03.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Student.cs",
+              "RelativeDocumentMoniker": "Library\\Student.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Student.cs",
+              "RelativeToolTip": "Library\\Student.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T01:50:19.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Library",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Library.csproj",
+              "RelativeDocumentMoniker": "Library\\Library.csproj",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Library.csproj",
+              "RelativeToolTip": "Library\\Library.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-20T06:07:23.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Admin.cs",
+              "RelativeDocumentMoniker": "Library\\Admin.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Admin.cs",
+              "RelativeToolTip": "Library\\Admin.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T06:15:57.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Program.cs",
+              "RelativeDocumentMoniker": "Library\\Program.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Program.cs",
+              "RelativeToolTip": "Library\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T07:34:58.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminDeleteUser.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminDeleteUser.cs",
+              "RelativeDocumentMoniker": "Library\\AdminDeleteUser.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\AdminDeleteUser.cs",
+              "RelativeToolTip": "Library\\AdminDeleteUser.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAcwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T16:24:05.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Admin.resx",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Admin.resx",
+              "RelativeDocumentMoniker": "Library\\Admin.resx",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Admin.resx",
+              "RelativeToolTip": "Library\\Admin.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-10-20T06:23:05.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Admin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Admin.Designer.cs",
+              "RelativeDocumentMoniker": "Library\\Admin.Designer.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Admin.Designer.cs",
+              "RelativeToolTip": "Library\\Admin.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T06:18:11.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "Library\\Login.Designer.cs",
+              "ToolTip": "C:\\Users\\Zhouzhou\\source\\repos\\Library\\Library\\Login.Designer.cs",
+              "RelativeToolTip": "Library\\Login.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T07:35:35.796Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
