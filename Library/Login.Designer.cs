@@ -35,6 +35,7 @@
             textBox2 = new TextBox();
             button1 = new Button();
             pictureBox1 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Papyrus", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(611, 95);
+            label1.Location = new Point(606, 157);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(209, 54);
@@ -53,7 +54,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Papyrus", 10.2857141F, FontStyle.Bold);
-            label3.Location = new Point(530, 233);
+            label3.Location = new Point(526, 272);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(128, 34);
@@ -64,7 +65,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Papyrus", 10.2857141F, FontStyle.Bold);
-            label4.Location = new Point(530, 325);
+            label4.Location = new Point(526, 356);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(122, 34);
@@ -73,7 +74,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(672, 235);
+            textBox1.Location = new Point(668, 274);
             textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(218, 32);
@@ -81,7 +82,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(672, 327);
+            textBox2.Location = new Point(668, 358);
             textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(218, 32);
@@ -91,7 +92,7 @@
             // 
             button1.BackColor = Color.PapayaWhip;
             button1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(637, 456);
+            button1.Location = new Point(645, 466);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(152, 58);
@@ -105,19 +106,31 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new Point(33, 64);
+            pictureBox1.Location = new Point(40, 138);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(446, 450);
+            pictureBox1.Size = new Size(428, 386);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Papyrus", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(206, 44);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(527, 54);
+            label2.TabIndex = 8;
+            label2.Text = "Welcome to DOTNET library";
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(928, 592);
+            Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(textBox2);
@@ -143,5 +156,6 @@
         private TextBox textBox2;
         private Button button1;
         private PictureBox pictureBox1;
+        private Label label2;
     }
 }
