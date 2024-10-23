@@ -48,11 +48,10 @@ namespace Library{
         // Sign out button click event handler
         private void button4_Click(object sender, EventArgs e)
         {
-            // Clear login details
-            ClearLoginDetails();
+            SignOut signOut = new SignOut();
 
-            // Redirect to login form
-            RedirectToLoginForm();
+            // Use the SignOutUser method, passing the current Admin form
+            signOut.SignOutUser(this);
         }
 
         // Method to clear login details
