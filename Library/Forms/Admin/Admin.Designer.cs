@@ -33,12 +33,14 @@
             button2 = new Button();
             button3 = new Button();
             pictureBox1 = new PictureBox();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(595, 186);
+            button1.Font = new Font("Papyrus", 8.883117F);
+            button1.Location = new Point(556, 180);
             button1.Name = "button1";
             button1.Size = new Size(284, 59);
             button1.TabIndex = 0;
@@ -49,17 +51,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft YaHei UI", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            label1.Location = new Point(568, 80);
+            label1.Font = new Font("Papyrus", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(537, 76);
             label1.Name = "label1";
-            label1.Size = new Size(332, 45);
+            label1.Size = new Size(313, 54);
             label1.TabIndex = 1;
             label1.Text = "Admin Dashboard";
             label1.Click += label1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(595, 283);
+            button2.Font = new Font("Papyrus", 8.883117F);
+            button2.Location = new Point(556, 280);
             button2.Name = "button2";
             button2.Size = new Size(284, 59);
             button2.TabIndex = 2;
@@ -69,7 +72,8 @@
             // 
             // button3
             // 
-            button3.Location = new Point(595, 380);
+            button3.Font = new Font("Papyrus", 8.883117F);
+            button3.Location = new Point(556, 380);
             button3.Name = "button3";
             button3.Size = new Size(284, 59);
             button3.TabIndex = 3;
@@ -79,18 +83,33 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(1, -1);
+            pictureBox1.Location = new Point(-1, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(490, 579);
+            pictureBox1.Size = new Size(453, 591);
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.IndianRed;
+            button4.ForeColor = SystemColors.ButtonHighlight;
+            button4.Location = new Point(636, 480);
+            button4.Margin = new Padding(4);
+            button4.Name = "button4";
+            button4.Size = new Size(129, 54);
+            button4.TabIndex = 7;
+            button4.Text = "SIGN OUT";
+            button4.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // Admin
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(985, 582);
+            ClientSize = new Size(928, 592);
+            Controls.Add(button4);
             Controls.Add(pictureBox1);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -112,5 +131,6 @@
         private Button button2;
         private Button button3;
         private PictureBox pictureBox1;
+        private Button button4;
     }
 }

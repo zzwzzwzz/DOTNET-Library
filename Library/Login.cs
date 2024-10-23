@@ -133,6 +133,11 @@ namespace Library
         // This method can handle any initialization when the form loads
         private void Login_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

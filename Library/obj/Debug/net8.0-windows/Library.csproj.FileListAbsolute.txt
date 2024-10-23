@@ -143,7 +143,6 @@ C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.LibrarianCheckBook.resources
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.LibrarianDeleteBook.resources
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.Login.resources
-C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.Signup.resources
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.Student.resources
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.StudentBorrowBook.resources
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.StudentCheckAllBooks.resources
@@ -163,3 +162,4 @@ C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\ref\Library.dll
 C:\Users\Zhouzhou\source\repos\Library\Library\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\Zhouzhou\source\repos\Library\Library\bin\Debug\net8.0-windows\bin\Debug\net8.0-windows\Data\users.json
+C:\Users\Zhouzhou\source\repos\Library\Library\obj\Debug\net8.0-windows\Library.Properties.Resources.resources

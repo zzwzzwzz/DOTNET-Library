@@ -44,6 +44,7 @@
             borrowToolStripMenuItem = new ToolStripMenuItem();
             returnToolStripMenuItem = new ToolStripMenuItem();
             allBooksToolStripMenuItem = new ToolStripMenuItem();
+            sIGNOUTToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -148,19 +149,21 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.Font = new Font("Rockwell", 8.883117F, FontStyle.Regular, GraphicsUnit.Point, 0);
             menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, allBooksToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, allBooksToolStripMenuItem, sIGNOUTToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(895, 33);
+            menuStrip1.Size = new Size(928, 34);
             menuStrip1.TabIndex = 22;
             menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(82, 30);
-            menuToolStripMenuItem.Text = "Menu";
+            menuToolStripMenuItem.Size = new Size(123, 30);
+            menuToolStripMenuItem.Text = "Dashboard";
+            menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
             // 
             // borrowToolStripMenuItem
             // 
@@ -181,11 +184,17 @@
             allBooksToolStripMenuItem.Size = new Size(107, 30);
             allBooksToolStripMenuItem.Text = "All Users";
             // 
+            // sIGNOUTToolStripMenuItem
+            // 
+            sIGNOUTToolStripMenuItem.Name = "sIGNOUTToolStripMenuItem";
+            sIGNOUTToolStripMenuItem.Size = new Size(120, 30);
+            sIGNOUTToolStripMenuItem.Text = "SIGN OUT";
+            // 
             // AdminAddNewUser
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(895, 539);
+            ClientSize = new Size(928, 592);
             Controls.Add(menuStrip1);
             Controls.Add(comboBox1);
             Controls.Add(textBox3);
@@ -225,5 +234,6 @@
         private ToolStripMenuItem borrowToolStripMenuItem;
         private ToolStripMenuItem returnToolStripMenuItem;
         private ToolStripMenuItem allBooksToolStripMenuItem;
+        private ToolStripMenuItem sIGNOUTToolStripMenuItem;
     }
 }
