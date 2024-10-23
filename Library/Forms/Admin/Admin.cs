@@ -24,9 +24,9 @@ namespace Library
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Open the form to add a new user
-            AdminAddNewUser addNewUserForm = new AdminAddNewUser();
-            addNewUserForm.ShowDialog();
+            //// open the form to add a new user
+            //adminaddnewuser addnewuserform = new adminaddnewuser();
+            //addnewuserform.showdialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

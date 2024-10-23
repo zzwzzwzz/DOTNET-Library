@@ -161,3 +161,5 @@ C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\refint\L
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.pdb
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\Library.genruntimeconfig.cache
 C:\Users\Zhouzhou\Source\Repos\Library\Library\obj\Debug\net8.0-windows\ref\Library.dll
+C:\Users\Zhouzhou\source\repos\Library\Library\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Zhouzhou\source\repos\Library\Library\bin\Debug\net8.0-windows\bin\Debug\net8.0-windows\Data\users.json

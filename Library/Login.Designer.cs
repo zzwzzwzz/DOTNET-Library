@@ -35,8 +35,6 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             button1 = new Button();
-            label5 = new Label();
-            linkLabel1 = new LinkLabel();
             SuspendLayout();
             // 
             // label1
@@ -78,12 +76,11 @@
             label4.Size = new Size(99, 25);
             label4.TabIndex = 3;
             label4.Text = "password";
-            label4.Click += label4_Click;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(359, 202);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
+            textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(349, 32);
             textBox1.TabIndex = 4;
@@ -91,7 +88,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(359, 264);
-            textBox2.Margin = new Padding(4, 4, 4, 4);
+            textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(349, 32);
             textBox2.TabIndex = 5;
@@ -99,44 +96,21 @@
             // button1
             // 
             button1.BackColor = Color.Gainsboro;
-            button1.Location = new Point(410, 327);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Location = new Point(413, 357);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(129, 36);
             button1.TabIndex = 6;
             button1.Text = "SIGN IN";
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
             button1.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(278, 399);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(270, 25);
-            label5.TabIndex = 7;
-            label5.Text = "Don't have an account yet? ";
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(549, 399);
-            linkLabel1.Margin = new Padding(4, 0, 4, 0);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(129, 25);
-            linkLabel1.TabIndex = 8;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Sign up here";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            button1.Click += btnSignIn_Click; 
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(931, 558);
-            Controls.Add(linkLabel1);
-            Controls.Add(label5);
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -144,9 +118,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Login";
             Text = "Login";
+            // Load += Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -160,7 +135,5 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Button button1;
-        private Label label5;
-        private LinkLabel linkLabel1;
     }
 }
