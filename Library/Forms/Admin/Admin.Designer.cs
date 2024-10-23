@@ -39,65 +39,69 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Papyrus", 8.883117F);
-            button1.Location = new Point(556, 180);
+            button1.BackColor = Color.PapayaWhip;
+            button1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
+            button1.Location = new Point(564, 169);
             button1.Name = "button1";
             button1.Size = new Size(284, 59);
             button1.TabIndex = 0;
             button1.Text = "Check All User";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Papyrus", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(537, 76);
+            label1.Location = new Point(545, 65);
             label1.Name = "label1";
             label1.Size = new Size(313, 54);
             label1.TabIndex = 1;
             label1.Text = "Admin Dashboard";
-            label1.Click += label1_Click;
             // 
             // button2
             // 
-            button2.Font = new Font("Papyrus", 8.883117F);
-            button2.Location = new Point(556, 280);
+            button2.BackColor = Color.PapayaWhip;
+            button2.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
+            button2.Location = new Point(564, 269);
             button2.Name = "button2";
             button2.Size = new Size(284, 59);
             button2.TabIndex = 2;
             button2.Text = "Add New User";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Font = new Font("Papyrus", 8.883117F);
-            button3.Location = new Point(556, 380);
+            button3.BackColor = Color.PapayaWhip;
+            button3.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
+            button3.Location = new Point(564, 369);
             button3.Name = "button3";
             button3.Size = new Size(284, 59);
             button3.TabIndex = 3;
             button3.Text = "Delete User";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(-1, 1);
+            pictureBox1.Image = Properties.Resources.Admin_Dashboard;
+            pictureBox1.Location = new Point(34, 58);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(453, 591);
+            pictureBox1.Size = new Size(461, 472);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // button4
             // 
             button4.BackColor = Color.IndianRed;
+            button4.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = SystemColors.ButtonHighlight;
-            button4.Location = new Point(636, 480);
+            button4.Location = new Point(622, 467);
             button4.Margin = new Padding(4);
             button4.Name = "button4";
-            button4.Size = new Size(129, 54);
+            button4.Size = new Size(169, 59);
             button4.TabIndex = 7;
             button4.Text = "SIGN OUT";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;

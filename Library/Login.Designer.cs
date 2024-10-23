@@ -42,18 +42,18 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Papyrus", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(220, 52);
+            label1.Location = new Point(611, 95);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(546, 54);
+            label1.Size = new Size(209, 54);
             label1.TabIndex = 0;
-            label1.Text = "Welcome to DOTNET Library";
+            label1.Text = "User Login";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Papyrus", 10.2857141F, FontStyle.Bold);
-            label3.Location = new Point(492, 233);
+            label3.Location = new Point(530, 233);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(128, 34);
@@ -64,7 +64,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Papyrus", 10.2857141F, FontStyle.Bold);
-            label4.Location = new Point(492, 312);
+            label4.Location = new Point(530, 325);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(122, 34);
@@ -73,7 +73,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(650, 233);
+            textBox1.Location = new Point(672, 235);
             textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(218, 32);
@@ -81,7 +81,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(650, 312);
+            textBox2.Location = new Point(672, 327);
             textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(218, 32);
@@ -89,12 +89,12 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.NavajoWhite;
+            button1.BackColor = Color.PapayaWhip;
             button1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(590, 418);
+            button1.Location = new Point(637, 456);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
-            button1.Size = new Size(176, 62);
+            button1.Size = new Size(152, 58);
             button1.TabIndex = 6;
             button1.Text = "SIGN IN";
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -105,9 +105,9 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new Point(37, 149);
+            pictureBox1.Location = new Point(33, 64);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(379, 372);
+            pictureBox1.Size = new Size(446, 450);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;

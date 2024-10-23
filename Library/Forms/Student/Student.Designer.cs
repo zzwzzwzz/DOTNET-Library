@@ -34,20 +34,24 @@
             label1 = new Label();
             button1 = new Button();
             button4 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(1, 0);
+            pictureBox1.Image = Properties.Resources.Student_Dashboard;
+            pictureBox1.Location = new Point(50, 88);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(490, 579);
+            pictureBox1.Size = new Size(434, 415);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
             // button3
             // 
-            button3.Location = new Point(595, 404);
+            button3.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
+            button3.Location = new Point(566, 396);
             button3.Name = "button3";
             button3.Size = new Size(284, 59);
             button3.TabIndex = 8;
@@ -56,7 +60,8 @@
             // 
             // button2
             // 
-            button2.Location = new Point(595, 324);
+            button2.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
+            button2.Location = new Point(566, 144);
             button2.Name = "button2";
             button2.Size = new Size(284, 59);
             button2.TabIndex = 7;
@@ -66,17 +71,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft YaHei UI", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            label1.Location = new Point(561, 65);
+            label1.Font = new Font("Papyrus", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(537, 61);
             label1.Name = "label1";
-            label1.Size = new Size(353, 45);
+            label1.Size = new Size(346, 54);
             label1.TabIndex = 6;
             label1.Text = "Student Dashboard";
             label1.Click += label1_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(595, 244);
+            button1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
+            button1.Location = new Point(566, 312);
             button1.Name = "button1";
             button1.Size = new Size(284, 59);
             button1.TabIndex = 5;
@@ -85,18 +91,34 @@
             // 
             // button4
             // 
-            button4.Location = new Point(595, 164);
+            button4.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
+            button4.Location = new Point(566, 228);
             button4.Name = "button4";
             button4.Size = new Size(284, 59);
             button4.TabIndex = 10;
             button4.Text = "Borrow Book";
             button4.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            button5.BackColor = Color.IndianRed;
+            button5.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = SystemColors.ButtonHighlight;
+            button5.Location = new Point(622, 480);
+            button5.Margin = new Padding(4);
+            button5.Name = "button5";
+            button5.Size = new Size(169, 59);
+            button5.TabIndex = 11;
+            button5.Text = "SIGN OUT";
+            button5.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button5.UseVisualStyleBackColor = false;
+            // 
             // Student
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(968, 577);
+            ClientSize = new Size(928, 592);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(pictureBox1);
             Controls.Add(button3);
@@ -119,5 +141,6 @@
         private Label label1;
         private Button button1;
         private Button button4;
+        private Button button5;
     }
 }

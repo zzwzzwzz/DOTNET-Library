@@ -28,84 +28,148 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            textBox1 = new TextBox();
-            label2 = new Label();
-            button2 = new Button();
-            button1 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            label4 = new Label();
+            menuStrip1 = new MenuStrip();
+            menuToolStripMenuItem = new ToolStripMenuItem();
+            borrowToolStripMenuItem = new ToolStripMenuItem();
+            returnToolStripMenuItem = new ToolStripMenuItem();
+            allBooksToolStripMenuItem = new ToolStripMenuItem();
+            sIGNOUTToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // button3
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft YaHei UI", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            label1.Location = new Point(273, 127);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(310, 36);
-            label1.TabIndex = 18;
-            label1.Text = "Librarian Delete Book";
+            button3.BackColor = Color.LightGray;
+            button3.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ControlText;
+            button3.Location = new Point(485, 403);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(169, 59);
+            button3.TabIndex = 31;
+            button3.Text = "Back";
+            button3.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button3.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // button4
             // 
-            textBox1.Location = new Point(367, 228);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(174, 27);
-            textBox1.TabIndex = 17;
+            button4.BackColor = Color.PapayaWhip;
+            button4.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = SystemColors.ControlText;
+            button4.Location = new Point(263, 403);
+            button4.Margin = new Padding(4);
+            button4.Name = "button4";
+            button4.Size = new Size(169, 59);
+            button4.TabIndex = 30;
+            button4.Text = "Confirm";
+            button4.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button4.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // label3
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(257, 230);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(62, 20);
-            label2.TabIndex = 16;
-            label2.Text = "Book ID";
+            label3.AutoSize = true;
+            label3.Font = new Font("Papyrus", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(219, 133);
+            label3.Name = "label3";
+            label3.Size = new Size(486, 54);
+            label3.TabIndex = 29;
+            label3.Text = "Librarian Delete Book by ID";
             // 
-            // button2
+            // textBox2
             // 
-            button2.Location = new Point(453, 293);
-            button2.Margin = new Padding(2);
-            button2.Name = "button2";
-            button2.Size = new Size(87, 30);
-            button2.TabIndex = 15;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = true;
+            textBox2.Location = new Point(416, 275);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(238, 32);
+            textBox2.TabIndex = 28;
             // 
-            // button1
+            // label4
             // 
-            button1.Location = new Point(257, 293);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(87, 30);
-            button1.TabIndex = 14;
-            button1.Text = "Remove";
-            button1.UseVisualStyleBackColor = true;
+            label4.AutoSize = true;
+            label4.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
+            label4.Location = new Point(265, 275);
+            label4.Name = "label4";
+            label4.Size = new Size(97, 30);
+            label4.TabIndex = 27;
+            label4.Text = "Book ID";
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuStrip1.ImageScalingSize = new Size(26, 26);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, allBooksToolStripMenuItem, sIGNOUTToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(928, 38);
+            menuStrip1.TabIndex = 32;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            menuToolStripMenuItem.Size = new Size(131, 34);
+            menuToolStripMenuItem.Text = "Dashboard";
+            // 
+            // borrowToolStripMenuItem
+            // 
+            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
+            borrowToolStripMenuItem.Size = new Size(124, 34);
+            borrowToolStripMenuItem.Text = "All Books";
+            // 
+            // returnToolStripMenuItem
+            // 
+            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
+            returnToolStripMenuItem.Size = new Size(131, 34);
+            returnToolStripMenuItem.Text = "Add Book";
+            // 
+            // allBooksToolStripMenuItem
+            // 
+            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
+            allBooksToolStripMenuItem.Size = new Size(151, 34);
+            allBooksToolStripMenuItem.Text = "Delete Book";
+            // 
+            // sIGNOUTToolStripMenuItem
+            // 
+            sIGNOUTToolStripMenuItem.Name = "sIGNOUTToolStripMenuItem";
+            sIGNOUTToolStripMenuItem.Size = new Size(120, 34);
+            sIGNOUTToolStripMenuItem.Text = "Sign Out";
             // 
             // LibrarianDeleteBook
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(928, 592);
+            Controls.Add(menuStrip1);
+            Controls.Add(button3);
+            Controls.Add(button4);
+            Controls.Add(label3);
+            Controls.Add(textBox2);
+            Controls.Add(label4);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "LibrarianDeleteBook";
             Text = "LibrarianDeleteBook";
+            Load += LibrarianDeleteBook_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private TextBox textBox1;
-        private Label label2;
-        private Button button2;
-        private Button button1;
+        private Button button3;
+        private Button button4;
+        private Label label3;
+        private TextBox textBox2;
+        private Label label4;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem menuToolStripMenuItem;
+        private ToolStripMenuItem borrowToolStripMenuItem;
+        private ToolStripMenuItem returnToolStripMenuItem;
+        private ToolStripMenuItem allBooksToolStripMenuItem;
+        private ToolStripMenuItem sIGNOUTToolStripMenuItem;
     }
 }

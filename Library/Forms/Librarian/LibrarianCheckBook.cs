@@ -16,5 +16,10 @@ namespace Library
         {
             InitializeComponent();
         }
+
+        private void LibrarianCheckBook_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
