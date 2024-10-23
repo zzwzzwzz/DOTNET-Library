@@ -15,13 +15,16 @@ namespace Library
             textBox2.PasswordChar = '•';
         }
 
+        // This will be triggered when the "Sign In" button is clicked
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             try
             {
-                string username = textBox1.Text.Trim();
+                // Get the text entered by the user in the username and password fields
+                string username = textBox1.Text.Trim(); // Trim() removes extra spaces
                 string password = textBox2.Text.Trim();
 
+                // Check if the username or password fields are empty
                 if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
                 {
                     MessageBox.Show("Please enter both username and password.", "Validation Error",
@@ -31,21 +34,26 @@ namespace Library
 
                 var users = LoadUsersFromFile();
 
-                // Debug: Check if users were loaded
+                // Check if any users were loaded from the file
                 if (users.Count == 0)
                 {
+                    // Show an error message if no users were found in the file
                     MessageBox.Show("No users found in the database.", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
+                // Find a matching user based on the entered username and password
                 var user = users.Find(u =>
                     string.Equals(u.Username, username, StringComparison.OrdinalIgnoreCase) &&
                     string.Equals(u.Password, password, StringComparison.Ordinal));
 
+                // If a user is found, open the appropriate dashboard based on their role
                 if (user != null)
                 {
-                    Form? dashboard = null;
+                    Form? dashboard = null; // This will hold the form to be opened based on the role
+
+                    // Switch based on the user's role to decide which dashboard to open
                     switch (user.Role.ToLower())
                     {
                         case "admin":
@@ -59,26 +67,30 @@ namespace Library
                             break;
                     }
 
+                    // If a matching dashboard form was created, open it and close the login form
                     if (dashboard != null)
                     {
-                        dashboard.FormClosed += (s, args) => this.Close();
+                        dashboard.FormClosed += (s, args) => this.Close(); // Close login form when the dashboard is closed
                         dashboard.Show();
                         this.Hide();
                     }
                 }
                 else
                 {
+                    // If no matching user is found, show an error message
                     MessageBox.Show("Invalid username or password.", "Login Failed",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
+                // If an error occurs during login (e.g., file issues), show a generic error message
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        // Method to load users from a JSON file
         private List<User> LoadUsersFromFile()
         {
             try
@@ -86,10 +98,10 @@ namespace Library
                 // Get the application's base directory
                 string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-                // Construct the full path to users.json
+                // Create the full path to the users.json file in the "Data" folder
                 string filePath = Path.Combine(baseDirectory, "Data", "users.json");
 
-                // Debug: Check if file exists
+                // Check if file exists
                 if (!File.Exists(filePath))
                 {
                     MessageBox.Show($"Users file not found at: {filePath}", "File Error",
@@ -99,7 +111,7 @@ namespace Library
 
                 string jsonData = File.ReadAllText(filePath);
 
-                // Debug: Check if JSON data is empty
+                // Check if JSON data is empty
                 if (string.IsNullOrWhiteSpace(jsonData))
                 {
                     MessageBox.Show("Users file is empty!", "Data Error",
@@ -117,8 +129,15 @@ namespace Library
                 return new List<User>();
             }
         }
+
+        // This method can handle any initialization when the form loads
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
+    // Class to represent a user object, matching the JSON structure
     public class User
     {
         public int UserID { get; set; }
