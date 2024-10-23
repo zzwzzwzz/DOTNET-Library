@@ -42,6 +42,7 @@
             button3 = new Button();
             label3 = new Label();
             dateTimePicker1 = new DateTimePicker();
+            signOutToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem, signOutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(928, 38);
@@ -169,6 +170,12 @@
             dateTimePicker1.Size = new Size(238, 32);
             dateTimePicker1.TabIndex = 38;
             // 
+            // signOutToolStripMenuItem
+            // 
+            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            signOutToolStripMenuItem.Size = new Size(120, 34);
+            signOutToolStripMenuItem.Text = "Sign Out";
+            // 
             // StudentReturnBook
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
@@ -206,5 +213,6 @@
         private Button button3;
         private Label label3;
         private DateTimePicker dateTimePicker1;
+        private ToolStripMenuItem signOutToolStripMenuItem;
     }
 }

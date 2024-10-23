@@ -16,5 +16,15 @@ namespace Library
         {
             InitializeComponent();
         }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void allBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

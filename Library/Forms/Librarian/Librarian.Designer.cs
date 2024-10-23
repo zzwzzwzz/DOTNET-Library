@@ -85,9 +85,10 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.ErrorImage = Properties.Resources.Librarian_Dashboard;
             pictureBox1.Image = Properties.Resources.Librarian_Dashboard;
             pictureBox1.ImageLocation = "C:\\Users\\Prakai\\Desktop\\Library\\Library\\Images\\Logo.png";
-            pictureBox1.Location = new Point(38, 67);
+            pictureBox1.Location = new Point(43, 68);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(446, 456);
@@ -120,7 +121,7 @@
             Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(button1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Librarian";
             Text = "Librarian";
             Load += Librarian_Load;

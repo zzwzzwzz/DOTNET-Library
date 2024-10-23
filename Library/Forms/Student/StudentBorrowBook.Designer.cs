@@ -31,10 +31,11 @@
             button3 = new Button();
             menuStrip1 = new MenuStrip();
             menuToolStripMenuItem = new ToolStripMenuItem();
+            allBooksToolStripMenuItem = new ToolStripMenuItem();
             borrowToolStripMenuItem = new ToolStripMenuItem();
             returnToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
             historyToolStripMenuItem = new ToolStripMenuItem();
+            signOutToolStripMenuItem = new ToolStripMenuItem();
             button1 = new Button();
             button4 = new Button();
             label1 = new Label();
@@ -59,7 +60,7 @@
             // 
             menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem, signOutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(928, 38);
@@ -69,32 +70,40 @@
             // menuToolStripMenuItem
             // 
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(128, 29);
+            menuToolStripMenuItem.Size = new Size(131, 34);
             menuToolStripMenuItem.Text = "Dashboard";
+            menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
+            // 
+            // allBooksToolStripMenuItem
+            // 
+            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
+            allBooksToolStripMenuItem.Size = new Size(124, 34);
+            allBooksToolStripMenuItem.Text = "All Books";
+            allBooksToolStripMenuItem.Click += allBooksToolStripMenuItem_Click;
             // 
             // borrowToolStripMenuItem
             // 
             borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(145, 29);
+            borrowToolStripMenuItem.Size = new Size(158, 34);
             borrowToolStripMenuItem.Text = "Borrow Book";
             // 
             // returnToolStripMenuItem
             // 
             returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(141, 29);
+            returnToolStripMenuItem.Size = new Size(151, 34);
             returnToolStripMenuItem.Text = "Return Book";
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(112, 29);
-            allBooksToolStripMenuItem.Text = "All Books";
             // 
             // historyToolStripMenuItem
             // 
             historyToolStripMenuItem.Name = "historyToolStripMenuItem";
-            historyToolStripMenuItem.Size = new Size(93, 29);
+            historyToolStripMenuItem.Size = new Size(99, 34);
             historyToolStripMenuItem.Text = "History";
+            // 
+            // signOutToolStripMenuItem
+            // 
+            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            signOutToolStripMenuItem.Size = new Size(120, 34);
+            signOutToolStripMenuItem.Text = "Sign Out";
             // 
             // button1
             // 
@@ -208,5 +217,6 @@
         private Label label2;
         private DateTimePicker dateTimePicker1;
         private Label label3;
+        private ToolStripMenuItem signOutToolStripMenuItem;
     }
 }

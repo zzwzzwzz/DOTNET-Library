@@ -36,6 +36,7 @@
             borrowToolStripMenuItem = new ToolStripMenuItem();
             returnToolStripMenuItem = new ToolStripMenuItem();
             historyToolStripMenuItem = new ToolStripMenuItem();
+            signOutToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             // 
             menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem, signOutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(928, 38);
@@ -73,6 +74,7 @@
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             menuToolStripMenuItem.Size = new Size(131, 34);
             menuToolStripMenuItem.Text = "Dashboard";
+            // menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
             // 
             // allBooksToolStripMenuItem
             // 
@@ -97,6 +99,12 @@
             historyToolStripMenuItem.Name = "historyToolStripMenuItem";
             historyToolStripMenuItem.Size = new Size(99, 34);
             historyToolStripMenuItem.Text = "History";
+            // 
+            // signOutToolStripMenuItem
+            // 
+            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            signOutToolStripMenuItem.Size = new Size(120, 34);
+            signOutToolStripMenuItem.Text = "Sign Out";
             // 
             // StudentCheckAllBooks
             // 
@@ -124,5 +132,6 @@
         private ToolStripMenuItem borrowToolStripMenuItem;
         private ToolStripMenuItem returnToolStripMenuItem;
         private ToolStripMenuItem historyToolStripMenuItem;
+        private ToolStripMenuItem signOutToolStripMenuItem;
     }
 }
