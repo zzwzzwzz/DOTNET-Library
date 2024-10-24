@@ -33,17 +33,8 @@
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
-            button3 = new Button();
             label3 = new Label();
             dateTimePicker1 = new DateTimePicker();
-            menuToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
-            borrowToolStripMenuItem = new ToolStripMenuItem();
-            returnToolStripMenuItem = new ToolStripMenuItem();
-            historyToolStripMenuItem = new ToolStripMenuItem();
-            signOutToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1 = new MenuStrip();
-            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -51,7 +42,7 @@
             button1.BackColor = Color.LightGray;
             button1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(478, 475);
+            button1.Location = new Point(478, 394);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(169, 59);
@@ -66,7 +57,7 @@
             button4.BackColor = Color.PapayaWhip;
             button4.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = SystemColors.ControlText;
-            button4.Location = new Point(256, 475);
+            button4.Location = new Point(256, 394);
             button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(169, 59);
@@ -103,21 +94,11 @@
             label2.TabIndex = 33;
             label2.Text = "Book ID";
             // 
-            // button3
-            // 
-            button3.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(258, 398);
-            button3.Name = "button3";
-            button3.Size = new Size(389, 59);
-            button3.TabIndex = 32;
-            button3.Text = "Check Borrow History";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
-            label3.Location = new Point(258, 289);
+            label3.Location = new Point(258, 309);
             label3.Name = "label3";
             label3.Size = new Size(129, 30);
             label3.TabIndex = 39;
@@ -126,57 +107,10 @@
             // dateTimePicker1
             // 
             dateTimePicker1.CalendarFont = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(409, 289);
+            dateTimePicker1.Location = new Point(409, 309);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(238, 32);
             dateTimePicker1.TabIndex = 38;
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(131, 34);
-            menuToolStripMenuItem.Text = "Dashboard";
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(124, 34);
-            allBooksToolStripMenuItem.Text = "All Books";
-            // 
-            // borrowToolStripMenuItem
-            // 
-            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(158, 34);
-            borrowToolStripMenuItem.Text = "Borrow Book";
-            // 
-            // returnToolStripMenuItem
-            // 
-            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(151, 34);
-            returnToolStripMenuItem.Text = "Return Book";
-            // 
-            // historyToolStripMenuItem
-            // 
-            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
-            historyToolStripMenuItem.Size = new Size(99, 34);
-            historyToolStripMenuItem.Text = "History";
-            // 
-            // signOutToolStripMenuItem
-            // 
-            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            signOutToolStripMenuItem.Size = new Size(120, 34);
-            signOutToolStripMenuItem.Text = "Sign Out";
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem, signOutToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(928, 38);
-            menuStrip1.TabIndex = 27;
-            menuStrip1.Text = "menuStrip1";
             // 
             // StudentReturnBook
             // 
@@ -190,13 +124,9 @@
             Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(label2);
-            Controls.Add(button3);
-            Controls.Add(menuStrip1);
             Name = "StudentReturnBook";
             Text = "StudentReturnBook";
             Load += StudentReturnBook_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -207,15 +137,7 @@
         private Label label1;
         private TextBox textBox1;
         private Label label2;
-        private Button button3;
         private Label label3;
         private DateTimePicker dateTimePicker1;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem allBooksToolStripMenuItem;
-        private ToolStripMenuItem borrowToolStripMenuItem;
-        private ToolStripMenuItem returnToolStripMenuItem;
-        private ToolStripMenuItem historyToolStripMenuItem;
-        private ToolStripMenuItem signOutToolStripMenuItem;
-        private MenuStrip menuStrip1;
     }
 }
