@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using System.Windows.Forms;
+using Library.Models; // Reference the User class from the Models namespace
 
 namespace Library
 {
@@ -129,20 +130,5 @@ namespace Library
                 return new List<User>();
             }
         }
-
-        // This method can handle any initialization when the form loads
-        private void Login_Load(object sender, EventArgs e)
-        {
-            
-        }
-    }
-
-    // Class to represent a user object, matching the JSON structure
-    public class User
-    {
-        public int UserID { get; set; }
-        public string Username { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-        public string Role { get; set; } = string.Empty;
     }
 }

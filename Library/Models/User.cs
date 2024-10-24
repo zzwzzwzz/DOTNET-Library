@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.Models
+namespace Library.Models 
 {
-    public abstract class User
+    public class User
     {
-        public required string UserId { get; set; }
-        public required string Username { get; set; }
-        public required string Password { get; set; }
-        public abstract string GetUserType();
+        public int UserID { get; set; }
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
     }
 }

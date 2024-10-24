@@ -28,26 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             label1 = new Label();
             menuStrip1 = new MenuStrip();
             menuToolStripMenuItem = new ToolStripMenuItem();
+            allBooksToolStripMenuItem = new ToolStripMenuItem();
             borrowToolStripMenuItem = new ToolStripMenuItem();
             returnToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
             sIGNOUTToolStripMenuItem = new ToolStripMenuItem();
+            dataGridView1 = new DataGridView();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(92, 168);
-            listBox1.Margin = new Padding(3, 2, 3, 2);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(731, 379);
-            listBox1.TabIndex = 0;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -58,7 +52,6 @@
             label1.Size = new Size(405, 54);
             label1.TabIndex = 1;
             label1.Text = "Admin Check All Users";
-            label1.Click += label1_Click;
             // 
             // menuStrip1
             // 
@@ -77,6 +70,12 @@
             menuToolStripMenuItem.Size = new Size(131, 34);
             menuToolStripMenuItem.Text = "Dashboard";
             // 
+            // allBooksToolStripMenuItem
+            // 
+            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
+            allBooksToolStripMenuItem.Size = new Size(117, 34);
+            allBooksToolStripMenuItem.Text = "All Users";
+            // 
             // borrowToolStripMenuItem
             // 
             borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
@@ -89,39 +88,69 @@
             returnToolStripMenuItem.Size = new Size(144, 34);
             returnToolStripMenuItem.Text = "Delete User";
             // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(117, 34);
-            allBooksToolStripMenuItem.Text = "All Users";
-            // 
             // sIGNOUTToolStripMenuItem
             // 
             sIGNOUTToolStripMenuItem.Name = "sIGNOUTToolStripMenuItem";
             sIGNOUTToolStripMenuItem.Size = new Size(120, 34);
             sIGNOUTToolStripMenuItem.Text = "Sign Out";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            dataGridView1.BackgroundColor = Color.PapayaWhip;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Microsoft YaHei UI", 8.883117F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.PapayaWhip;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Microsoft YaHei UI", 8.883117F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.PapayaWhip;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridView1.GridColor = Color.PapayaWhip;
+            dataGridView1.Location = new Point(78, 163);
+            dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Microsoft YaHei UI", 8.883117F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.PapayaWhip;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.RowHeadersWidth = 66;
+            dataGridView1.Size = new Size(764, 384);
+            dataGridView1.TabIndex = 24;
+            // 
             // AdminCheckAllUsers
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(928, 592);
+            Controls.Add(dataGridView1);
             Controls.Add(menuStrip1);
             Controls.Add(label1);
-            Controls.Add(listBox1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "AdminCheckAllUsers";
             Text = "AdminCheckAllUsers";
             Load += AdminCheckAllUsers_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private ListBox listBox1;
         private Label label1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem menuToolStripMenuItem;
@@ -129,5 +158,6 @@
         private ToolStripMenuItem returnToolStripMenuItem;
         private ToolStripMenuItem allBooksToolStripMenuItem;
         private ToolStripMenuItem sIGNOUTToolStripMenuItem;
+        private DataGridView dataGridView1;
     }
 }
