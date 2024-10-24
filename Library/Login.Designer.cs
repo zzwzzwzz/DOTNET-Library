@@ -112,7 +112,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            // pictureBox1.Click += pictureBox1_Click;
             // 
             // label2
             // 

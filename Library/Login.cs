@@ -135,11 +135,6 @@ namespace Library
         {
             
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
     // Class to represent a user object, matching the JSON structure
