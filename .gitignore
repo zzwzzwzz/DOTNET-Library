@@ -5,10 +5,6 @@
 *.cache
 *.vscode/
 
-# Ignore build outputs
-bin/
-obj/
-
 # Ignore auto-generated assembly info
 AssemblyInfo.cs
 
@@ -22,5 +18,6 @@ AssemblyInfo.cs
 *.props
 *.g.*
 
-# Ignore build-specific JSON and cache files
-*.json
+obj/
+
+*.resources
