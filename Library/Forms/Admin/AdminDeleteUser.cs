@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
+using System.Linq;  // Add this to use LINQ methods like FirstOrDefault and Any
 using System.Windows.Forms;
+using Library.Models;  // Import the User class from Models namespace
 
 namespace Library
 {
@@ -97,15 +99,6 @@ namespace Library
                 }
             }
             return false; // No user found with the given ID
-        }
-
-        // User class (matching the JSON structure)
-        public class User
-        {
-            public int UserID { get; set; }
-            public string Username { get; set; } = string.Empty;
-            public string Password { get; set; } = string.Empty;
-            public string Role { get; set; } = string.Empty;
         }
     }
 }
