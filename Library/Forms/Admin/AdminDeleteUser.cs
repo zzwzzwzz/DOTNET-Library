@@ -19,6 +19,12 @@ namespace Library
             // Set the path to the users.json file
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             jsonFilePath = Path.Combine(baseDirectory, "Data", "users.json");
+
+            // Add the Admin Menu Bar to the form
+            var menuStrip = AdminMenuBar.CreateMenu(this);
+            this.MainMenuStrip = menuStrip; // Set the main menu for the form
+            this.Controls.Add(menuStrip); // Add it to the form controls
+            menuStrip.Dock = DockStyle.Top; // Ensure the MenuStrip is docked at the top
         }
 
         // This method is triggered when the form loads

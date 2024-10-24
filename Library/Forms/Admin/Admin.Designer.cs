@@ -47,7 +47,7 @@
             button1.TabIndex = 0;
             button1.Text = "Check All User";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += Button1_Click;
             // 
             // label1
             // 
@@ -69,7 +69,7 @@
             button2.TabIndex = 2;
             button2.Text = "Add New User";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            button2.Click += Button2_Click;
             // 
             // button3
             // 
@@ -81,7 +81,7 @@
             button3.TabIndex = 3;
             button3.Text = "Delete User";
             button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            button3.Click += Button3_Click;
             // 
             // pictureBox1
             // 
@@ -106,7 +106,7 @@
             button4.Text = "SIGN OUT";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button4.Click += Button4_Click;
             // 
             // Admin
             // 

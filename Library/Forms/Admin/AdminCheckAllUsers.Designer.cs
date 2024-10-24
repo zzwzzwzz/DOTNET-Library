@@ -32,14 +32,7 @@
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             label1 = new Label();
-            menuStrip1 = new MenuStrip();
-            menuToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
-            borrowToolStripMenuItem = new ToolStripMenuItem();
-            returnToolStripMenuItem = new ToolStripMenuItem();
-            sIGNOUTToolStripMenuItem = new ToolStripMenuItem();
             dataGridView1 = new DataGridView();
-            menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -52,47 +45,6 @@
             label1.Size = new Size(405, 54);
             label1.TabIndex = 1;
             label1.Text = "Admin Check All Users";
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, sIGNOUTToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(928, 38);
-            menuStrip1.TabIndex = 23;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(131, 34);
-            menuToolStripMenuItem.Text = "Dashboard";
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(117, 34);
-            allBooksToolStripMenuItem.Text = "All Users";
-            // 
-            // borrowToolStripMenuItem
-            // 
-            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(124, 34);
-            borrowToolStripMenuItem.Text = "Add User";
-            // 
-            // returnToolStripMenuItem
-            // 
-            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(144, 34);
-            returnToolStripMenuItem.Text = "Delete User";
-            // 
-            // sIGNOUTToolStripMenuItem
-            // 
-            sIGNOUTToolStripMenuItem.Name = "sIGNOUTToolStripMenuItem";
-            sIGNOUTToolStripMenuItem.Size = new Size(120, 34);
-            sIGNOUTToolStripMenuItem.Text = "Sign Out";
             // 
             // dataGridView1
             // 
@@ -137,14 +89,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(928, 592);
             Controls.Add(dataGridView1);
-            Controls.Add(menuStrip1);
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "AdminCheckAllUsers";
             Text = "AdminCheckAllUsers";
             Load += AdminCheckAllUsers_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -152,12 +101,6 @@
 
         #endregion
         private Label label1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem borrowToolStripMenuItem;
-        private ToolStripMenuItem returnToolStripMenuItem;
-        private ToolStripMenuItem allBooksToolStripMenuItem;
-        private ToolStripMenuItem sIGNOUTToolStripMenuItem;
         private DataGridView dataGridView1;
     }
 }

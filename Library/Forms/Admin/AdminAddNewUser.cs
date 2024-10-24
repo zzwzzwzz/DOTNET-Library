@@ -11,6 +11,8 @@ namespace Library
         // Path to the users.json file (constructed dynamically)
         private string jsonFilePath;
 
+        public string JsonFilePath { get => jsonFilePath; set => jsonFilePath = value; }
+
         public AdminAddNewUser()
         {
             InitializeComponent();
@@ -18,6 +20,12 @@ namespace Library
             // Set the correct path for users.json file
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory; // Get the base directory
             jsonFilePath = Path.Combine(baseDirectory, "Data", "users.json"); // Combine with "Data" folder and file name
+
+            // Add the Admin Menu Bar to the form
+            var menuStrip = AdminMenuBar.CreateMenu(this);
+            this.MainMenuStrip = menuStrip; // Set the main menu for the form
+            this.Controls.Add(menuStrip); // Add it to the form controls
+            menuStrip.Dock = DockStyle.Top; // Ensure the MenuStrip is docked at the top
         }
 
         private void AdminAddNewUser_Load(object sender, EventArgs e)
@@ -28,7 +36,7 @@ namespace Library
         }
 
         // Confirm Button Click (buttonConfirm)
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             // Get inputs from text boxes
             string userId = textBox1.Text.Trim();
@@ -104,7 +112,7 @@ namespace Library
         }
 
         // Back Button Click
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             // Close the current form and go back to the previous one
             this.Close();
@@ -113,13 +121,13 @@ namespace Library
         // Method to load a new user to the users.json file
         private List<dynamic> LoadUsersFromFile()
         {
-            List<dynamic> usersList = new List<dynamic>();
+            List<dynamic> usersList = [];
 
             // Check if file exists
             if (File.Exists(jsonFilePath))
             {
                 string json = File.ReadAllText(jsonFilePath);
-                usersList = JsonConvert.DeserializeObject<List<dynamic>>(json) ?? new List<dynamic>();
+                usersList = JsonConvert.DeserializeObject<List<dynamic>>(json) ?? [];
             }
 
             return usersList;
@@ -129,13 +137,13 @@ namespace Library
         // Method to add a new user to the users.json file
         private void AddNewUserToJson(dynamic newUser)
         {
-            List<dynamic> usersList = new List<dynamic>();
+            List<dynamic> usersList = [];
 
             // Read the existing JSON data
             if (File.Exists(jsonFilePath))
             {
                 string json = File.ReadAllText(jsonFilePath);
-                usersList = JsonConvert.DeserializeObject<List<dynamic>>(json) ?? new List<dynamic>();
+                usersList = JsonConvert.DeserializeObject<List<dynamic>>(json) ?? [];
             }
 
             // Add the new user to the list

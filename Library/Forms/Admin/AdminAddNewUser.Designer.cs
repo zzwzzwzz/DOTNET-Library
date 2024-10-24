@@ -37,15 +37,8 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             comboBox1 = new ComboBox();
-            menuStrip1 = new MenuStrip();
-            menuToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
-            borrowToolStripMenuItem = new ToolStripMenuItem();
-            returnToolStripMenuItem = new ToolStripMenuItem();
-            sIGNOUTToolStripMenuItem = new ToolStripMenuItem();
             button4 = new Button();
             button1 = new Button();
-            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -57,7 +50,6 @@
             label1.Size = new Size(382, 54);
             label1.TabIndex = 2;
             label1.Text = "Admin Add New User";
-            // label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -68,7 +60,6 @@
             label2.Size = new Size(90, 30);
             label2.TabIndex = 3;
             label2.Text = "User ID";
-            // label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -89,7 +80,6 @@
             label4.Size = new Size(97, 30);
             label4.TabIndex = 5;
             label4.Text = "Password";
-            // label4.Click += label4_Click;
             // 
             // label5
             // 
@@ -107,7 +97,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(238, 32);
             textBox1.TabIndex = 8;
-            // textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -115,7 +104,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(238, 32);
             textBox2.TabIndex = 9;
-            // textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
@@ -123,7 +111,6 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(238, 32);
             textBox3.TabIndex = 10;
-            // textBox3.TextChanged += textBox3_TextChanged;
             // 
             // comboBox1
             // 
@@ -132,50 +119,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(239, 33);
             comboBox1.TabIndex = 11;
-            // comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, sIGNOUTToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(928, 38);
-            menuStrip1.TabIndex = 22;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(131, 34);
-            menuToolStripMenuItem.Text = "Dashboard";
-            // menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(117, 34);
-            allBooksToolStripMenuItem.Text = "All Users";
-            // 
-            // borrowToolStripMenuItem
-            // 
-            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(124, 34);
-            borrowToolStripMenuItem.Text = "Add User";
-            // borrowToolStripMenuItem.Click += borrowToolStripMenuItem_Click;
-            // 
-            // returnToolStripMenuItem
-            // 
-            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(144, 34);
-            returnToolStripMenuItem.Text = "Delete User";
-            // 
-            // sIGNOUTToolStripMenuItem
-            // 
-            sIGNOUTToolStripMenuItem.Name = "sIGNOUTToolStripMenuItem";
-            sIGNOUTToolStripMenuItem.Size = new Size(120, 34);
-            sIGNOUTToolStripMenuItem.Text = "Sign Out";
             // 
             // button4
             // 
@@ -190,7 +133,7 @@
             button4.Text = "Confirm";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button4.Click += Button4_Click;
             // 
             // button1
             // 
@@ -205,7 +148,7 @@
             button1.Text = "Back";
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += Button1_Click;
             // 
             // AdminAddNewUser
             // 
@@ -214,7 +157,6 @@
             ClientSize = new Size(928, 592);
             Controls.Add(button1);
             Controls.Add(button4);
-            Controls.Add(menuStrip1);
             Controls.Add(comboBox1);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -227,8 +169,6 @@
             Name = "AdminAddNewUser";
             Text = "AdminAddNewUser";
             Load += AdminAddNewUser_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -243,12 +183,6 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private ComboBox comboBox1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem borrowToolStripMenuItem;
-        private ToolStripMenuItem returnToolStripMenuItem;
-        private ToolStripMenuItem allBooksToolStripMenuItem;
-        private ToolStripMenuItem sIGNOUTToolStripMenuItem;
         private Button button4;
         private Button button1;
     }
