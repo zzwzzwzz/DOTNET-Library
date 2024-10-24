@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            menuToolStripMenuItem = new ToolStripMenuItem();
-            borrowToolStripMenuItem = new ToolStripMenuItem();
-            returnToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
-            sIGNOUTToolStripMenuItem = new ToolStripMenuItem();
             button2 = new Button();
             button4 = new Button();
             textBox3 = new TextBox();
@@ -45,49 +39,7 @@
             label8 = new Label();
             label9 = new Label();
             textBox4 = new TextBox();
-            menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, allBooksToolStripMenuItem, sIGNOUTToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(928, 38);
-            menuStrip1.TabIndex = 33;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(131, 34);
-            menuToolStripMenuItem.Text = "Dashboard";
-            // 
-            // borrowToolStripMenuItem
-            // 
-            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(124, 34);
-            borrowToolStripMenuItem.Text = "All Books";
-            // 
-            // returnToolStripMenuItem
-            // 
-            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(131, 34);
-            returnToolStripMenuItem.Text = "Add Book";
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(151, 34);
-            allBooksToolStripMenuItem.Text = "Delete Book";
-            // 
-            // sIGNOUTToolStripMenuItem
-            // 
-            sIGNOUTToolStripMenuItem.Name = "sIGNOUTToolStripMenuItem";
-            sIGNOUTToolStripMenuItem.Size = new Size(120, 34);
-            sIGNOUTToolStripMenuItem.Text = "Sign Out";
             // 
             // button2
             // 
@@ -213,24 +165,15 @@
             Controls.Add(label7);
             Controls.Add(label8);
             Controls.Add(label9);
-            Controls.Add(menuStrip1);
             Margin = new Padding(4);
             Name = "LibrarianAddbook";
             Text = "Librarian Add New Book";
             Load += LibrarianAddbook_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem borrowToolStripMenuItem;
-        private ToolStripMenuItem returnToolStripMenuItem;
-        private ToolStripMenuItem allBooksToolStripMenuItem;
-        private ToolStripMenuItem sIGNOUTToolStripMenuItem;
         private Button button2;
         private Button button4;
         private TextBox textBox3;

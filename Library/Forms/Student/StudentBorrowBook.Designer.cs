@@ -195,6 +195,7 @@
             MainMenuStrip = menuStrip1;
             Name = "StudentBorrowBook";
             Text = "StudentBorrowBook";
+            Load += StudentBorrowBook_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

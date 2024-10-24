@@ -36,8 +36,8 @@
             borrowToolStripMenuItem = new ToolStripMenuItem();
             returnToolStripMenuItem = new ToolStripMenuItem();
             historyToolStripMenuItem = new ToolStripMenuItem();
-            dateTimePicker1 = new DateTimePicker();
             signOutToolStripMenuItem = new ToolStripMenuItem();
+            dateTimePicker1 = new DateTimePicker();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -100,18 +100,18 @@
             historyToolStripMenuItem.Size = new Size(99, 34);
             historyToolStripMenuItem.Text = "History";
             // 
+            // signOutToolStripMenuItem
+            // 
+            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            signOutToolStripMenuItem.Size = new Size(120, 34);
+            signOutToolStripMenuItem.Text = "Sign Out";
+            // 
             // dateTimePicker1
             // 
             dateTimePicker1.Location = new Point(544, 530);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(321, 32);
             dateTimePicker1.TabIndex = 23;
-            // 
-            // signOutToolStripMenuItem
-            // 
-            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            signOutToolStripMenuItem.Size = new Size(120, 34);
-            signOutToolStripMenuItem.Text = "Sign Out";
             // 
             // StudentCheckBorrowHistory
             // 
@@ -124,6 +124,7 @@
             Controls.Add(listBox1);
             Name = "StudentCheckBorrowHistory";
             Text = "StudentCheckBorrowHistory";
+            Load += StudentCheckBorrowHistory_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

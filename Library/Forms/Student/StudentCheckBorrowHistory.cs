@@ -16,5 +16,10 @@ namespace Library
         {
             InitializeComponent();
         }
+
+        private void StudentCheckBorrowHistory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

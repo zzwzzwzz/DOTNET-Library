@@ -34,6 +34,7 @@
             borrowToolStripMenuItem = new ToolStripMenuItem();
             returnToolStripMenuItem = new ToolStripMenuItem();
             historyToolStripMenuItem = new ToolStripMenuItem();
+            signOutToolStripMenuItem = new ToolStripMenuItem();
             button1 = new Button();
             button4 = new Button();
             label1 = new Label();
@@ -42,7 +43,6 @@
             button3 = new Button();
             label3 = new Label();
             dateTimePicker1 = new DateTimePicker();
-            signOutToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -87,6 +87,12 @@
             historyToolStripMenuItem.Size = new Size(99, 34);
             historyToolStripMenuItem.Text = "History";
             // 
+            // signOutToolStripMenuItem
+            // 
+            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            signOutToolStripMenuItem.Size = new Size(120, 34);
+            signOutToolStripMenuItem.Text = "Sign Out";
+            // 
             // button1
             // 
             button1.BackColor = Color.LightGray;
@@ -100,6 +106,7 @@
             button1.Text = "Back";
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button4
             // 
@@ -114,6 +121,7 @@
             button4.Text = "Confirm";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label1
             // 
@@ -170,12 +178,6 @@
             dateTimePicker1.Size = new Size(238, 32);
             dateTimePicker1.TabIndex = 38;
             // 
-            // signOutToolStripMenuItem
-            // 
-            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            signOutToolStripMenuItem.Size = new Size(120, 34);
-            signOutToolStripMenuItem.Text = "Sign Out";
-            // 
             // StudentReturnBook
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
@@ -192,6 +194,7 @@
             Controls.Add(menuStrip1);
             Name = "StudentReturnBook";
             Text = "StudentReturnBook";
+            Load += StudentReturnBook_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

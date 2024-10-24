@@ -33,13 +33,6 @@
             label3 = new Label();
             textBox2 = new TextBox();
             label4 = new Label();
-            menuStrip1 = new MenuStrip();
-            menuToolStripMenuItem = new ToolStripMenuItem();
-            borrowToolStripMenuItem = new ToolStripMenuItem();
-            returnToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
-            sIGNOUTToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // button3
@@ -88,7 +81,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(238, 32);
             textBox2.TabIndex = 28;
-            // textBox2.TextChanged += TextBox2_TextChanged;
             // 
             // label4
             // 
@@ -100,53 +92,11 @@
             label4.TabIndex = 27;
             label4.Text = "Book ID";
             // 
-            // menuStrip1
-            // 
-            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, allBooksToolStripMenuItem, sIGNOUTToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(928, 38);
-            menuStrip1.TabIndex = 32;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(131, 34);
-            menuToolStripMenuItem.Text = "Dashboard";
-            // 
-            // borrowToolStripMenuItem
-            // 
-            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(124, 34);
-            borrowToolStripMenuItem.Text = "All Books";
-            // 
-            // returnToolStripMenuItem
-            // 
-            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(131, 34);
-            returnToolStripMenuItem.Text = "Add Book";
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(151, 34);
-            allBooksToolStripMenuItem.Text = "Delete Book";
-            // 
-            // sIGNOUTToolStripMenuItem
-            // 
-            sIGNOUTToolStripMenuItem.Name = "sIGNOUTToolStripMenuItem";
-            sIGNOUTToolStripMenuItem.Size = new Size(120, 34);
-            sIGNOUTToolStripMenuItem.Text = "Sign Out";
-            // 
             // LibrarianDeleteBook
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(928, 592);
-            Controls.Add(menuStrip1);
             Controls.Add(button3);
             Controls.Add(button4);
             Controls.Add(label3);
@@ -156,8 +106,6 @@
             Name = "LibrarianDeleteBook";
             Text = "LibrarianDeleteBook";
             Load += LibrarianDeleteBook_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -168,11 +116,5 @@
         private Label label3;
         private TextBox textBox2;
         private Label label4;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem borrowToolStripMenuItem;
-        private ToolStripMenuItem returnToolStripMenuItem;
-        private ToolStripMenuItem allBooksToolStripMenuItem;
-        private ToolStripMenuItem sIGNOUTToolStripMenuItem;
     }
 }

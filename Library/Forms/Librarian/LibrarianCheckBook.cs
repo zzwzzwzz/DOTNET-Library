@@ -18,6 +18,12 @@ namespace Library
             // Set the path to the books.json file in the Data folder
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory ?? string.Empty;
             jsonFilePath = Path.Combine(baseDirectory, "Data", "books.json");
+
+            // Add the Librarian Menu Bar to the form
+            var menuStrip = LibrarianMenuBar.CreateMenu(this);
+            this.MainMenuStrip = menuStrip; // Set the main menu for the form
+            this.Controls.Add(menuStrip);   // Add it to the form controls
+            menuStrip.Dock = DockStyle.Top; // Ensure the MenuStrip is docked at the top
         }
 
         // This method loads when the form opens

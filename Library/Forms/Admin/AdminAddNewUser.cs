@@ -35,7 +35,7 @@ namespace Library
             comboBox1.Items.Add("Student");
         }
 
-        // Confirm Button Click (buttonConfirm)
+        // Confirm Button Click
         private void Button4_Click(object sender, EventArgs e)
         {
             // Get inputs from text boxes
@@ -52,7 +52,7 @@ namespace Library
                 return;
             }
 
-            // Validate UserID (should be at least 4 digits)
+            // Validate UserID which should be at least 4 digits
             if (userId.Length < 4 || !int.TryParse(userId, out int parsedUserId))
             {
                 MessageBox.Show("User ID must be at least 4 digits long.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -99,7 +99,7 @@ namespace Library
                 AddNewUserToJson(newUser);
                 MessageBox.Show("New user added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Optionally, clear the input fields after successful addition
+                // Clear the input fields after successful addition
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();

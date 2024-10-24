@@ -26,5 +26,10 @@ namespace Library
         {
 
         }
+
+        private void StudentBorrowBook_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

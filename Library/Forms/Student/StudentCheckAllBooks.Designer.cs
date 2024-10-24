@@ -74,7 +74,6 @@
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             menuToolStripMenuItem.Size = new Size(131, 34);
             menuToolStripMenuItem.Text = "Dashboard";
-            // menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
             // 
             // allBooksToolStripMenuItem
             // 
@@ -116,6 +115,7 @@
             Controls.Add(listBox1);
             Name = "StudentCheckAllBooks";
             Text = "StudentCheckAllBooks";
+            Load += StudentCheckAllBooks_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

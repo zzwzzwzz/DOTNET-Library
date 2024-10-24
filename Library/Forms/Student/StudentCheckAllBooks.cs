@@ -40,7 +40,7 @@
             // Open Return Book form
             StudentReturnBook returnBookForm = new StudentReturnBook();
             returnBookForm.Show();
-            this.Close(); // Optionally close the current form
+            this.Close(); // Close the current form
         }
 
         // History menu item
@@ -49,7 +49,7 @@
             // Open Borrow History form
             StudentCheckBorrowHistory checkBorrowHistoryForm = new StudentCheckBorrowHistory();
             checkBorrowHistoryForm.Show();
-            this.Close(); // Optionally close the current form
+            this.Close(); 
         }
 
         // Sign Out menu item
@@ -58,6 +58,11 @@
             // Sign out and return to Login form
             SignOut signOut = new SignOut();
             SignOut.SignOutUser(this);
+        }
+
+        private void StudentCheckAllBooks_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

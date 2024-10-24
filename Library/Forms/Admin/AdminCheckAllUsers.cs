@@ -15,7 +15,7 @@ namespace Library
         {
             InitializeComponent();
 
-            // Set the path to the users.json file (in the Data folder)
+            // Set the path to the users.json file
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             jsonFilePath = Path.Combine(baseDirectory, "Data", "users.json");
 
@@ -54,7 +54,7 @@ namespace Library
                 column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
 
-            // Optional: Disable sorting on columns if not needed
+            // Disable sorting on columns if not needed
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
