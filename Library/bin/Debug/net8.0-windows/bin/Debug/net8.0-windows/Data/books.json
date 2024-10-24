@@ -1,0 +1,16 @@
+[
+  {
+    "BookID": 1,
+    "BookName": "xxx",
+    "Author": "xxx",
+    "Year": "1998",
+    "Availability": "yes"
+  },
+  {
+    "BookID": 2,
+    "BookName": "xxx",
+    "Author": "xxx",
+    "Year": "1998",
+    "Availability": "no"
+  }
+]
