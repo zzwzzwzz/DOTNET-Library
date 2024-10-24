@@ -102,7 +102,7 @@
             button2.Text = "Back";
             button2.TextImageRelation = TextImageRelation.TextBeforeImage;
             button2.UseVisualStyleBackColor = false;
-            // button2.Click += button2_Click;
+            button2.Click += button2_Click_1;
             // 
             // button4
             // 
@@ -117,7 +117,7 @@
             button4.Text = "Confirm";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
-            // button4.Click += button4_Click;
+            button4.Click += button4_Click_1;
             // 
             // textBox3
             // 
@@ -125,7 +125,6 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(238, 32);
             textBox3.TabIndex = 41;
-            // textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox2
             // 
@@ -133,7 +132,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(238, 32);
             textBox2.TabIndex = 40;
-            // textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox1
             // 
@@ -141,7 +139,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(238, 32);
             textBox1.TabIndex = 39;
-            // textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -199,7 +196,6 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(238, 32);
             textBox4.TabIndex = 45;
-            // textBox4.TextChanged += textBox4_TextChanged;
             // 
             // LibrarianAddbook
             // 

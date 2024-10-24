@@ -112,7 +112,7 @@ namespace Library
         }
 
         // Back Button Click
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             // Close the current form and go back to the previous one
             this.Close();
