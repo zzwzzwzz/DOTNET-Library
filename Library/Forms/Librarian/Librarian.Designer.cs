@@ -48,6 +48,7 @@
             button4.TabIndex = 14;
             button4.Text = "Check All Book";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button2
             // 
@@ -60,6 +61,7 @@
             button2.TabIndex = 13;
             button2.Text = "Add Book";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
@@ -82,11 +84,11 @@
             button1.TabIndex = 11;
             button1.Text = "Delete Book";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.ErrorImage = Properties.Resources.Librarian_Dashboard;
-            pictureBox1.Image = Properties.Resources.Librarian_Dashboard;
             pictureBox1.ImageLocation = "C:\\Users\\Prakai\\Desktop\\Library\\Library\\Images\\Logo.png";
             pictureBox1.Location = new Point(43, 68);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
@@ -109,6 +111,7 @@
             button3.Text = "SIGN OUT";
             button3.TextImageRelation = TextImageRelation.TextBeforeImage;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Librarian
             // 

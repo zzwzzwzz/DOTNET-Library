@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.Services
+namespace Library.Forms.Librarian
 {
-    internal class UserValidator
+    internal class LibrarianMenuBar
     {
     }
 }

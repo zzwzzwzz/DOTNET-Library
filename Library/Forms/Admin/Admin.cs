@@ -53,23 +53,23 @@ namespace Library{
             signOut.SignOutUser(this);
         }
 
-        //// TODO Method to clear login details
+        // TODO Method to clear login details
 
-        //// Method to redirect to login form
-        //private void RedirectToLoginForm()
-        //{
-        //    MessageBox.Show("Login details have been cleared.", "Signed Out");
-        //    // Hide the current Admin/Student/Librarian form
-        //    this.Hide();
+        // Method to redirect to login form
+        private void RedirectToLoginForm()
+        {
+            MessageBox.Show("Login details have been cleared.", "Signed Out");
+            // Hide the current Admin/Student/Librarian form
+            this.Hide();
 
-        //    // Open the login form
-        //    Login loginForm = new();
+            // Open the login form
+            Login loginForm = new();
 
-        //    // Show the login form
-        //    loginForm.Show();
+            // Show the login form
+            loginForm.Show();
 
-        //    // Handle form closing event for the login form
-        //    loginForm.FormClosed += (s, args) => this.Close();  // Close the hidden form after login form is closed
-        //}
+            // Handle form closing event for the login form
+            loginForm.FormClosed += (s, args) => this.Close();  // Close the hidden form after login form is closed
+        }
     }
 }

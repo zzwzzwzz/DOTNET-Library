@@ -23,6 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="bin\Debug\net8.0-windows\Data\books.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="bin\Debug\net8.0-windows\Data\users.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

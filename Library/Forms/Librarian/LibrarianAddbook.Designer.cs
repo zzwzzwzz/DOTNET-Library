@@ -102,6 +102,7 @@
             button2.Text = "Back";
             button2.TextImageRelation = TextImageRelation.TextBeforeImage;
             button2.UseVisualStyleBackColor = false;
+            // button2.Click += button2_Click;
             // 
             // button4
             // 
@@ -116,6 +117,7 @@
             button4.Text = "Confirm";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
+            // button4.Click += button4_Click;
             // 
             // textBox3
             // 
@@ -123,6 +125,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(238, 32);
             textBox3.TabIndex = 41;
+            // textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox2
             // 
@@ -130,6 +133,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(238, 32);
             textBox2.TabIndex = 40;
+            // textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox1
             // 
@@ -137,6 +141,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(238, 32);
             textBox1.TabIndex = 39;
+            // textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -144,9 +149,9 @@
             label1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold);
             label1.Location = new Point(269, 379);
             label1.Name = "label1";
-            label1.Size = new Size(69, 30);
+            label1.Size = new Size(58, 30);
             label1.TabIndex = 38;
-            label1.Text = "Detail";
+            label1.Text = "Year";
             // 
             // label6
             // 
@@ -194,6 +199,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(238, 32);
             textBox4.TabIndex = 45;
+            // textBox4.TextChanged += textBox4_TextChanged;
             // 
             // LibrarianAddbook
             // 
@@ -212,7 +218,7 @@
             Controls.Add(label8);
             Controls.Add(label9);
             Controls.Add(menuStrip1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "LibrarianAddbook";
             Text = "Librarian Add New Book";
             Load += LibrarianAddbook_Load;
