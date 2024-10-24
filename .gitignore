@@ -18,6 +18,19 @@ AssemblyInfo.cs
 *.props
 *.g.*
 
+# Ignore build outputs from /bin and /obj folders for all configurations and platforms
+bin/
 obj/
 
+# Ignore JSON files inside the bin/Debug directory
+bin/Debug/**/*.json
+
+# But DO NOT ignore specific JSON files you want to keep
+!bin/Debug/net8.0-windows/Data/books.json
+!bin/Debug/net8.0-windows/Data/users.json
+!bin/Debug/net8.0-windows/bin/Debug/net8.0-windows/Data/books.json
+!bin/Debug/net8.0-windows/bin/Debug/net8.0-windows/Data/users.json
+
+
+# Ignore other build-related files
 *.resources

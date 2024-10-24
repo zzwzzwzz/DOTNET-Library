@@ -1,16 +1,44 @@
 [
   {
     "BookID": 1,
-    "BookName": "xxx",
-    "Author": "xxx",
-    "Year": "1998",
+    "BookName": "To Kill a Mockingbird",
+    "Author": "Harper Lee",
+    "Year": "1960",
     "Availability": "yes"
   },
   {
     "BookID": 2,
-    "BookName": "xxx",
-    "Author": "xxx",
-    "Year": "1998",
+    "BookName": "1984",
+    "Author": "George Orwell",
+    "Year": "1949",
+    "Availability": "no"
+  },
+  {
+    "BookID": 3,
+    "BookName": "Pride and Prejudice",
+    "Author": "Jane Austen",
+    "Year": "1813",
+    "Availability": "yes"
+  },
+  {
+    "BookID": 4,
+    "BookName": "The Great Gatsby",
+    "Author": "F. Scott Fitzgerald",
+    "Year": "1925",
+    "Availability": "no"
+  },
+  {
+    "BookID": 5,
+    "BookName": "Moby Dick",
+    "Author": "Herman Melville",
+    "Year": "1851",
+    "Availability": "yes"
+  },
+  {
+    "BookID": 6,
+    "BookName": "War and Peace",
+    "Author": "Leo Tolstoy",
+    "Year": "1869",
     "Availability": "no"
   }
 ]
