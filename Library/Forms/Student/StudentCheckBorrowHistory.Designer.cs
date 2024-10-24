@@ -30,15 +30,7 @@
         {
             label1 = new Label();
             listBox1 = new ListBox();
-            menuStrip1 = new MenuStrip();
-            menuToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
-            borrowToolStripMenuItem = new ToolStripMenuItem();
-            returnToolStripMenuItem = new ToolStripMenuItem();
-            historyToolStripMenuItem = new ToolStripMenuItem();
-            signOutToolStripMenuItem = new ToolStripMenuItem();
             dateTimePicker1 = new DateTimePicker();
-            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -59,53 +51,6 @@
             listBox1.Size = new Size(793, 354);
             listBox1.TabIndex = 2;
             // 
-            // menuStrip1
-            // 
-            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem, signOutToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(928, 38);
-            menuStrip1.TabIndex = 22;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(131, 34);
-            menuToolStripMenuItem.Text = "Dashboard";
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(124, 34);
-            allBooksToolStripMenuItem.Text = "All Books";
-            // 
-            // borrowToolStripMenuItem
-            // 
-            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(158, 34);
-            borrowToolStripMenuItem.Text = "Borrow Book";
-            // 
-            // returnToolStripMenuItem
-            // 
-            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(151, 34);
-            returnToolStripMenuItem.Text = "Return Book";
-            // 
-            // historyToolStripMenuItem
-            // 
-            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
-            historyToolStripMenuItem.Size = new Size(99, 34);
-            historyToolStripMenuItem.Text = "History";
-            // 
-            // signOutToolStripMenuItem
-            // 
-            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            signOutToolStripMenuItem.Size = new Size(120, 34);
-            signOutToolStripMenuItem.Text = "Sign Out";
-            // 
             // dateTimePicker1
             // 
             dateTimePicker1.Location = new Point(544, 530);
@@ -119,14 +64,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(928, 592);
             Controls.Add(dateTimePicker1);
-            Controls.Add(menuStrip1);
             Controls.Add(label1);
             Controls.Add(listBox1);
             Name = "StudentCheckBorrowHistory";
             Text = "StudentCheckBorrowHistory";
             Load += StudentCheckBorrowHistory_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -135,13 +77,6 @@
 
         private Label label1;
         private ListBox listBox1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem allBooksToolStripMenuItem;
-        private ToolStripMenuItem borrowToolStripMenuItem;
-        private ToolStripMenuItem returnToolStripMenuItem;
-        private ToolStripMenuItem historyToolStripMenuItem;
         private DateTimePicker dateTimePicker1;
-        private ToolStripMenuItem signOutToolStripMenuItem;
     }
 }

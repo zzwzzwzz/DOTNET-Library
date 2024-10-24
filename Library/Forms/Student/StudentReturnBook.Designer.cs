@@ -28,13 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            menuToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
-            borrowToolStripMenuItem = new ToolStripMenuItem();
-            returnToolStripMenuItem = new ToolStripMenuItem();
-            historyToolStripMenuItem = new ToolStripMenuItem();
-            signOutToolStripMenuItem = new ToolStripMenuItem();
             button1 = new Button();
             button4 = new Button();
             label1 = new Label();
@@ -43,55 +36,15 @@
             button3 = new Button();
             label3 = new Label();
             dateTimePicker1 = new DateTimePicker();
+            menuToolStripMenuItem = new ToolStripMenuItem();
+            allBooksToolStripMenuItem = new ToolStripMenuItem();
+            borrowToolStripMenuItem = new ToolStripMenuItem();
+            returnToolStripMenuItem = new ToolStripMenuItem();
+            historyToolStripMenuItem = new ToolStripMenuItem();
+            signOutToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1 = new MenuStrip();
             menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStrip1.ImageScalingSize = new Size(26, 26);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem, signOutToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(928, 38);
-            menuStrip1.TabIndex = 27;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(131, 34);
-            menuToolStripMenuItem.Text = "Dashboard";
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(124, 34);
-            allBooksToolStripMenuItem.Text = "All Books";
-            // 
-            // borrowToolStripMenuItem
-            // 
-            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            borrowToolStripMenuItem.Size = new Size(158, 34);
-            borrowToolStripMenuItem.Text = "Borrow Book";
-            // 
-            // returnToolStripMenuItem
-            // 
-            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            returnToolStripMenuItem.Size = new Size(151, 34);
-            returnToolStripMenuItem.Text = "Return Book";
-            // 
-            // historyToolStripMenuItem
-            // 
-            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
-            historyToolStripMenuItem.Size = new Size(99, 34);
-            historyToolStripMenuItem.Text = "History";
-            // 
-            // signOutToolStripMenuItem
-            // 
-            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            signOutToolStripMenuItem.Size = new Size(120, 34);
-            signOutToolStripMenuItem.Text = "Sign Out";
             // 
             // button1
             // 
@@ -178,6 +131,53 @@
             dateTimePicker1.Size = new Size(238, 32);
             dateTimePicker1.TabIndex = 38;
             // 
+            // menuToolStripMenuItem
+            // 
+            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            menuToolStripMenuItem.Size = new Size(131, 34);
+            menuToolStripMenuItem.Text = "Dashboard";
+            // 
+            // allBooksToolStripMenuItem
+            // 
+            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
+            allBooksToolStripMenuItem.Size = new Size(124, 34);
+            allBooksToolStripMenuItem.Text = "All Books";
+            // 
+            // borrowToolStripMenuItem
+            // 
+            borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
+            borrowToolStripMenuItem.Size = new Size(158, 34);
+            borrowToolStripMenuItem.Text = "Borrow Book";
+            // 
+            // returnToolStripMenuItem
+            // 
+            returnToolStripMenuItem.Name = "returnToolStripMenuItem";
+            returnToolStripMenuItem.Size = new Size(151, 34);
+            returnToolStripMenuItem.Text = "Return Book";
+            // 
+            // historyToolStripMenuItem
+            // 
+            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
+            historyToolStripMenuItem.Size = new Size(99, 34);
+            historyToolStripMenuItem.Text = "History";
+            // 
+            // signOutToolStripMenuItem
+            // 
+            signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            signOutToolStripMenuItem.Size = new Size(120, 34);
+            signOutToolStripMenuItem.Text = "Sign Out";
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Font = new Font("Papyrus", 8.883117F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuStrip1.ImageScalingSize = new Size(26, 26);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, allBooksToolStripMenuItem, borrowToolStripMenuItem, returnToolStripMenuItem, historyToolStripMenuItem, signOutToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(928, 38);
+            menuStrip1.TabIndex = 27;
+            menuStrip1.Text = "menuStrip1";
+            // 
             // StudentReturnBook
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
@@ -202,12 +202,6 @@
         }
 
         #endregion
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem allBooksToolStripMenuItem;
-        private ToolStripMenuItem borrowToolStripMenuItem;
-        private ToolStripMenuItem returnToolStripMenuItem;
-        private ToolStripMenuItem historyToolStripMenuItem;
         private Button button1;
         private Button button4;
         private Label label1;
@@ -216,6 +210,12 @@
         private Button button3;
         private Label label3;
         private DateTimePicker dateTimePicker1;
+        private ToolStripMenuItem menuToolStripMenuItem;
+        private ToolStripMenuItem allBooksToolStripMenuItem;
+        private ToolStripMenuItem borrowToolStripMenuItem;
+        private ToolStripMenuItem returnToolStripMenuItem;
+        private ToolStripMenuItem historyToolStripMenuItem;
         private ToolStripMenuItem signOutToolStripMenuItem;
+        private MenuStrip menuStrip1;
     }
 }
