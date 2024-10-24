@@ -57,7 +57,7 @@
             button3.TabIndex = 8;
             button3.Text = "Check Borrow History";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            button3.Click += Button3_Click;
             // 
             // button2
             // 
@@ -68,7 +68,7 @@
             button2.TabIndex = 7;
             button2.Text = "Check All Books";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += Button2_Click;
             // 
             // label1
             // 
@@ -90,7 +90,7 @@
             button1.TabIndex = 5;
             button1.Text = "Return Book";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += Button1_Click;
             // 
             // button4
             // 
@@ -101,7 +101,7 @@
             button4.TabIndex = 10;
             button4.Text = "Borrow Book";
             button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button4.Click += Button4_Click;
             // 
             // button5
             // 
@@ -116,7 +116,7 @@
             button5.Text = "SIGN OUT";
             button5.TextImageRelation = TextImageRelation.TextBeforeImage;
             button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            button5.Click += Button5_Click;
             // 
             // Student
             // 

@@ -6,21 +6,19 @@ namespace Library
     public class SignOut
     {
         // Method to clear login details
-        public void ClearLoginDetails()
+        public static void ClearLoginDetails()
         {
-            // TODO clear any login/session details if necessary.
-
             MessageBox.Show("Login details have been cleared.", "Signed Out");
         }
 
         // Method to redirect to the login form
-        public void RedirectToLoginForm(Form currentForm)
+        public static void RedirectToLoginForm(Form currentForm)
         {
             // Hide the current form (Admin/Student/Librarian)
             currentForm.Hide();
 
             // Open the login form
-            Login loginForm = new Login();
+            Login loginForm = new();
 
             // Show the login form
             loginForm.Show();
@@ -30,7 +28,7 @@ namespace Library
         }
 
         // Combined method for sign out
-        public void SignOutUser(Form currentForm)
+        public static void SignOutUser(Form currentForm)
         {
             ClearLoginDetails();    // Clear login details
             RedirectToLoginForm(currentForm); // Redirect to login

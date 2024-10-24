@@ -49,10 +49,8 @@ namespace Library
         // Sign out button click event handler
         private void Button3_Click(object sender, EventArgs e)
         {
-            SignOut signOut = new();
-
             // Use the SignOutUser method, passing the current Admin form
-            signOut.SignOutUser(this);
+            SignOut.SignOutUser(this);
         }
     }
 }

@@ -57,7 +57,7 @@
         {
             // Sign out and return to Login form
             SignOut signOut = new SignOut();
-            signOut.SignOutUser(this);
+            SignOut.SignOutUser(this);
         }
     }
 }

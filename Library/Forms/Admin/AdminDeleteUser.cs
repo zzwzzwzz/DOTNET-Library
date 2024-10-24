@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
-using System.Linq;  // Add this to use LINQ methods like FirstOrDefault and Any
+using System.Linq;  // Use LINQ methods like FirstOrDefault and Any
 using System.Windows.Forms;
 using Library.Models;  // Import the User class from Models namespace
 
@@ -32,10 +32,10 @@ namespace Library
         // This method is triggered when the form loads
         private void AdminDeleteUser_Load(object sender, EventArgs e)
         {
-            // Optionally, you can add any initialization logic here
+
         }
 
-        // Confirm Button Click (buttonConfirm) - Deletes user by ID
+        // Confirm Button Click, deletes user by ID
         private void Button4_Click(object sender, EventArgs e)
         {
             // Get the user ID entered by the admin
@@ -48,7 +48,7 @@ namespace Library
                 return;
             }
 
-            // Attempt to delete the user by the entered ID
+            // Try to delete the user by the entered ID
             try
             {
                 bool isDeleted = DeleteUserById(userId);
@@ -69,7 +69,7 @@ namespace Library
             }
         }
 
-        // Back Button Click - Return to the previous form
+        // Back Button Click and return to the previous form
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Close(); // Close the current form

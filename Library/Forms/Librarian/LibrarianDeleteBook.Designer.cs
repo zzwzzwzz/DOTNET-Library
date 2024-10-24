@@ -88,7 +88,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(238, 32);
             textBox2.TabIndex = 28;
-            textBox2.TextChanged += TextBox2_TextChanged;
+            // textBox2.TextChanged += TextBox2_TextChanged;
             // 
             // label4
             // 

@@ -24,7 +24,7 @@ namespace Library
                 dashboardMenuItem, allUsersMenuItem, addUserMenuItem, deleteUserMenuItem, signOutMenuItem
             ]);
 
-            // Set global styles for the MenuStrip
+            // Set styles for the MenuStrip
             menuStrip.Font = new Font("Papyrus", 9, FontStyle.Bold);  // Change the font to Papyrus
             menuStrip.BackColor = SystemColors.Control;                      // Set background color
             menuStrip.ForeColor = SystemColors.ControlText;               // Default system text color
@@ -83,7 +83,7 @@ namespace Library
             loginForm.Show();
         }
 
-        // Custom renderer class to change hover behavior
+        // Change hover behavior
         private class CustomMenuRenderer : ProfessionalColorTable
         {
             public override Color MenuItemSelected

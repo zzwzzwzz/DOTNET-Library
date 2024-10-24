@@ -47,29 +47,11 @@ namespace Library{
         // Sign out button click event handler
         private void Button4_Click(object sender, EventArgs e)
         {
-            SignOut signOut = new();
+            SignOut signOut1 = new();
+            SignOut signOut = signOut1;
 
             // Use the SignOutUser method, passing the current Admin form
-            signOut.SignOutUser(this);
-        }
-
-        // TODO Method to clear login details
-
-        // Method to redirect to login form
-        private void RedirectToLoginForm()
-        {
-            MessageBox.Show("Login details have been cleared.", "Signed Out");
-            // Hide the current Admin/Student/Librarian form
-            this.Hide();
-
-            // Open the login form
-            Login loginForm = new();
-
-            // Show the login form
-            loginForm.Show();
-
-            // Handle form closing event for the login form
-            loginForm.FormClosed += (s, args) => this.Close();  // Close the hidden form after login form is closed
+            SignOut.SignOutUser(this);
         }
     }
 }
