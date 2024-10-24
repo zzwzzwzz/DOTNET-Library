@@ -19,10 +19,7 @@ namespace Library
 
         private void Librarian_Load(object sender, EventArgs e)
         {
-            //// Add the Librarian Menu Bar to the form
-            //var menuStrip = LibrarianMenuBar.CreateMenu(this);
-            //this.MainMenuStrip = menuStrip; // Set the main menu for the form
-            //this.Controls.Add(menuStrip);   // Add it to the form controls
+
         }
 
         private void Button4_Click(object sender, EventArgs e)

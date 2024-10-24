@@ -31,6 +31,6 @@ bin/Debug/**/*.json
 !bin/Debug/net8.0-windows/bin/Debug/net8.0-windows/Data/books.json
 !bin/Debug/net8.0-windows/bin/Debug/net8.0-windows/Data/users.json
 
-
 # Ignore other build-related files
 *.resources
+
