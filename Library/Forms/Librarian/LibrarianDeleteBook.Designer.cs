@@ -55,6 +55,7 @@
             button3.Text = "Back";
             button3.TextImageRelation = TextImageRelation.TextBeforeImage;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += Button3_Click;
             // 
             // button4
             // 
@@ -69,6 +70,7 @@
             button4.Text = "Confirm";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += Button4_Click;
             // 
             // label3
             // 
@@ -86,6 +88,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(238, 32);
             textBox2.TabIndex = 28;
+            textBox2.TextChanged += TextBox2_TextChanged;
             // 
             // label4
             // 
@@ -149,7 +152,7 @@
             Controls.Add(label3);
             Controls.Add(textBox2);
             Controls.Add(label4);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "LibrarianDeleteBook";
             Text = "LibrarianDeleteBook";
             Load += LibrarianDeleteBook_Load;

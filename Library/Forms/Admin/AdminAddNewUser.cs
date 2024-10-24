@@ -8,7 +8,7 @@ namespace Library
 {
     public partial class AdminAddNewUser : Form
     {
-        // Path to the users.json file (constructed dynamically)
+        // Path to the users.json file
         private string jsonFilePath;
 
         public string JsonFilePath { get => jsonFilePath; set => jsonFilePath = value; }
@@ -60,12 +60,12 @@ namespace Library
             }
 
             // Validate based on role
-            if (role == "Librarian" && !userId.StartsWith("2"))
+            if (role == "Librarian" && !userId.StartsWith('2'))
             {
                 MessageBox.Show("Librarian ID must start with 2***.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            else if (role == "Student" && !userId.StartsWith("3"))
+            else if (role == "Student" && !userId.StartsWith('3'))
             {
                 MessageBox.Show("Student ID must start with 3***.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
