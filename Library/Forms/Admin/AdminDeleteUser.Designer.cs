@@ -33,9 +33,9 @@
             label1 = new Label();
             menuStrip1 = new MenuStrip();
             menuToolStripMenuItem = new ToolStripMenuItem();
+            allBooksToolStripMenuItem = new ToolStripMenuItem();
             borrowToolStripMenuItem = new ToolStripMenuItem();
             returnToolStripMenuItem = new ToolStripMenuItem();
-            allBooksToolStripMenuItem = new ToolStripMenuItem();
             sIGNOUTToolStripMenuItem = new ToolStripMenuItem();
             button1 = new Button();
             button4 = new Button();
@@ -68,7 +68,6 @@
             label1.Size = new Size(436, 54);
             label1.TabIndex = 13;
             label1.Text = "Admin Delete User by ID";
-            label1.Click += label1_Click;
             // 
             // menuStrip1
             // 
@@ -87,6 +86,12 @@
             menuToolStripMenuItem.Size = new Size(131, 34);
             menuToolStripMenuItem.Text = "Dashboard";
             // 
+            // allBooksToolStripMenuItem
+            // 
+            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
+            allBooksToolStripMenuItem.Size = new Size(117, 34);
+            allBooksToolStripMenuItem.Text = "All Users";
+            // 
             // borrowToolStripMenuItem
             // 
             borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
@@ -98,12 +103,6 @@
             returnToolStripMenuItem.Name = "returnToolStripMenuItem";
             returnToolStripMenuItem.Size = new Size(144, 34);
             returnToolStripMenuItem.Text = "Delete User";
-            // 
-            // allBooksToolStripMenuItem
-            // 
-            allBooksToolStripMenuItem.Name = "allBooksToolStripMenuItem";
-            allBooksToolStripMenuItem.Size = new Size(117, 34);
-            allBooksToolStripMenuItem.Text = "All Users";
             // 
             // sIGNOUTToolStripMenuItem
             // 
@@ -124,6 +123,7 @@
             button1.Text = "Back";
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button4
             // 
@@ -138,6 +138,7 @@
             button4.Text = "Confirm";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // AdminDeleteUser
             // 

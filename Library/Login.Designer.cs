@@ -100,7 +100,7 @@
             button1.Text = "SIGN IN";
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
             button1.UseVisualStyleBackColor = false;
-            button1.Click += btnSignIn_Click;
+            button1.Click += BtnSignIn_Click;
             // 
             // pictureBox1
             // 

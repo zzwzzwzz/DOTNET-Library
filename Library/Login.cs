@@ -17,7 +17,7 @@ namespace Library
         }
 
         // This will be triggered when the "Sign In" button is clicked
-        private void btnSignIn_Click(object sender, EventArgs e)
+        private void BtnSignIn_Click(object sender, EventArgs e)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace Library
         }
 
         // Method to load users from a JSON file
-        private List<User> LoadUsersFromFile()
+        private static List<User> LoadUsersFromFile()
         {
             try
             {
@@ -107,7 +107,7 @@ namespace Library
                 {
                     MessageBox.Show($"Users file not found at: {filePath}", "File Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return new List<User>();
+                    return [];
                 }
 
                 string jsonData = File.ReadAllText(filePath);
@@ -117,17 +117,17 @@ namespace Library
                 {
                     MessageBox.Show("Users file is empty!", "Data Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return new List<User>();
+                    return [];
                 }
 
                 var users = JsonConvert.DeserializeObject<List<User>>(jsonData);
-                return users ?? new List<User>();
+                return users ?? [];
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error loading users: {ex.Message}", "Load Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return new List<User>();
+                return [];
             }
         }
     }
