@@ -102,7 +102,7 @@
             button2.Text = "Back";
             button2.TextImageRelation = TextImageRelation.TextBeforeImage;
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click_1;
+            button2.Click += Button2_Click_1;
             // 
             // button4
             // 
@@ -117,7 +117,7 @@
             button4.Text = "Confirm";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click_1;
+            button4.Click += Button4_Click_1;
             // 
             // textBox3
             // 

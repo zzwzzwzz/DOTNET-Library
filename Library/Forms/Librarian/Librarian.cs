@@ -25,29 +25,29 @@ namespace Library
             //this.Controls.Add(menuStrip);   // Add it to the form controls
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             // Open the Check All Books form
-            LibrarianCheckBook checkBooksForm = new LibrarianCheckBook();
+            LibrarianCheckBook checkBooksForm = new();
             checkBooksForm.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             // Open the Add New Book form
-            LibrarianAddbook addBookForm = new LibrarianAddbook();
+            LibrarianAddbook addBookForm = new();
             addBookForm.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             // Open the Delete Book form
-            LibrarianDeleteBook deleteBookForm = new LibrarianDeleteBook();
+            LibrarianDeleteBook deleteBookForm = new();
             deleteBookForm.ShowDialog();
         }
 
         // Sign out button click event handler
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             SignOut signOut = new();
 

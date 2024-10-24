@@ -26,7 +26,7 @@ namespace Library
         }
 
         // Confirm Button Click
-        private void button4_Click_1(object sender, EventArgs e)
+        private void Button4_Click_1(object sender, EventArgs e)
         {
             // Get inputs from text boxes
             string bookId = textBox1.Text.Trim();
@@ -96,7 +96,7 @@ namespace Library
         }
 
         // Back Button Click
-        private void button2_Click_1(object sender, EventArgs e)
+        private void Button2_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -104,7 +104,7 @@ namespace Library
         // Method to load books from the books.json file
         private List<Book> LoadBooksFromFile()
         {
-            List<Book> booksList = new List<Book>();
+            List<Book> booksList = [];
 
             try
             {
@@ -121,13 +121,13 @@ namespace Library
                     // Error handling
                     try
                     {
-                        booksList = JsonConvert.DeserializeObject<List<Book>>(json) ?? new List<Book>();
+                        booksList = JsonConvert.DeserializeObject<List<Book>>(json) ?? [];
                     }
                     catch (JsonReaderException ex)
                     {
                         MessageBox.Show($"Error reading books.json: {ex.Message}\nPlease check the JSON file format.",
                             "JSON Format Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return new List<Book>();
+                        return [];
                     }
                 }
                 else
