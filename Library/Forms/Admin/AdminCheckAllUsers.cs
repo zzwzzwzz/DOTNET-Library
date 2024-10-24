@@ -9,7 +9,7 @@ namespace Library
 {
     public partial class AdminCheckAllUsers : Form
     {
-        private string jsonFilePath;
+        private readonly string jsonFilePath;
 
         public AdminCheckAllUsers()
         {

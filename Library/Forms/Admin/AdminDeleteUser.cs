@@ -10,6 +10,8 @@ namespace Library
     {
         private string jsonFilePath;
 
+        public string JsonFilePath { get => jsonFilePath; set => jsonFilePath = value; }
+
         public AdminDeleteUser()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace Library
         }
 
         // Confirm Button Click (buttonConfirm) - Deletes user by ID
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             // Get the user ID entered by the admin
             string userId = textBox1.Text.Trim();
@@ -60,7 +62,7 @@ namespace Library
         }
 
         // Back Button Click - Return to the previous form
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             this.Close(); // Close the current form
         }

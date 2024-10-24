@@ -123,7 +123,7 @@
             button1.Text = "Back";
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += Button1_Click;
             // 
             // button4
             // 
@@ -138,7 +138,7 @@
             button4.Text = "Confirm";
             button4.TextImageRelation = TextImageRelation.TextBeforeImage;
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button4.Click += Button4_Click;
             // 
             // AdminDeleteUser
             // 
