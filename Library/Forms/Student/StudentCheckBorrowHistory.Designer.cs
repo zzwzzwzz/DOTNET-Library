@@ -29,46 +29,56 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            listBox1 = new ListBox();
             dateTimePicker1 = new DateTimePicker();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Papyrus", 15.8961039F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(195, 67);
+            label1.Location = new Point(142, 54);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(538, 54);
+            label1.Size = new Size(432, 42);
             label1.TabIndex = 3;
             label1.Text = "Student Check Borrow History";
             // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(72, 146);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(793, 354);
-            listBox1.TabIndex = 2;
-            // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(544, 530);
+            dateTimePicker1.Location = new Point(396, 424);
+            dateTimePicker1.Margin = new Padding(2);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(321, 32);
+            dateTimePicker1.Size = new Size(235, 27);
             dateTimePicker1.TabIndex = 23;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.GridColor = SystemColors.ActiveCaption;
+            dataGridView1.Location = new Point(60, 120);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(571, 274);
+            dataGridView1.TabIndex = 24;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // StudentCheckBorrowHistory
             // 
-            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(928, 592);
+            ClientSize = new Size(675, 474);
+            Controls.Add(dataGridView1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label1);
-            Controls.Add(listBox1);
+            Margin = new Padding(2);
             Name = "StudentCheckBorrowHistory";
             Text = "StudentCheckBorrowHistory";
             Load += StudentCheckBorrowHistory_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -76,7 +86,7 @@
         #endregion
 
         private Label label1;
-        private ListBox listBox1;
         private DateTimePicker dateTimePicker1;
+        private DataGridView dataGridView1;
     }
 }

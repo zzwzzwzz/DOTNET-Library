@@ -26,7 +26,7 @@ namespace Library
         private void Button4_Click(object sender, EventArgs e)
         {
             // Open the Borrow Book form
-            StudentBorrowBook borrowBookForm = new();
+            StudentBorrowBook borrowBookForm = new StudentBorrowBook();
             borrowBookForm.ShowDialog();
         }
 

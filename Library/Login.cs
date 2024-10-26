@@ -52,6 +52,7 @@ namespace Library
                 // If a user is found, open the appropriate dashboard based on their role
                 if (user != null)
                 {
+                    UserSession.CurrentUserID = user.UserID;
                     Form? dashboard = null; // This will hold the form to be opened based on the role
 
                     // Switch based on the user's role to decide which dashboard to open
@@ -129,6 +130,11 @@ namespace Library
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return [];
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
