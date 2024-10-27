@@ -117,14 +117,11 @@ namespace Library
             File.WriteAllText(borrowHistoryFilePath, jsonData);
         }
 
+        // Back Button Click
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            // Close the current form and go back to the previous one
+            this.Close();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

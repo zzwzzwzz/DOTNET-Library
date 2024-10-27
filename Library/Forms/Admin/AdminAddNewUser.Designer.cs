@@ -148,6 +148,7 @@
             button1.Text = "Back";
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // AdminAddNewUser
             // 
