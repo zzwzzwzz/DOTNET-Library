@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Library.Interfaces
 {
-    public interface IBookRepository
+    public interface IBorrowHistoryRepository
     {
-        List<Book> LoadBooks();
-        void SaveBooks(List<Book> books);
+        List<BorrowBook> LoadBorrowHistory();
+        void SaveBorrowHistory(List<BorrowBook> history);
     }
 }
