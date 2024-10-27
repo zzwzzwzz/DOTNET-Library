@@ -44,15 +44,17 @@ namespace Library
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            // check if user input is integer
             if (!int.TryParse(textBox1.Text, out int bookID))
             {
                 MessageBox.Show("Please enter a valid Book ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Load Borrow History and find the entry for this user and book ID
+            // Check if the user has an unreturned of the book
             List<BorrowBook> history = LoadBorrowHistory();
+
+            // search for book that current user does not return yet
             var borrowEntry = history.FirstOrDefault(h => h.BookID == bookID && h.UserID == UserSession.CurrentUserID && h.ReturnDate == null);
 
             if (borrowEntry == null)
@@ -78,6 +80,7 @@ namespace Library
             Close(); 
         }
 
+        // Method to load the list of books from JSON
         private List<Book> LoadBooks()
         {
             if (File.Exists(booksFilePath))
@@ -88,12 +91,15 @@ namespace Library
             return new List<Book>();
         }
 
+        // Save the updated to JSON file
+
         private void SaveBooks(List<Book> books)
         {
             string jsonData = JsonSerializer.Serialize(books, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(booksFilePath, jsonData);
         }
 
+        // Method to load the list of borrowed book
         private List<BorrowBook> LoadBorrowHistory()
         {
             if (File.Exists(borrowHistoryFilePath))
@@ -104,6 +110,7 @@ namespace Library
             return new List<BorrowBook>();
         }
 
+        //Method to save the updated borrow history to JSON file
         private void SaveBorrowHistory(List<BorrowBook> history)
         {
             string jsonData = JsonSerializer.Serialize(history, new JsonSerializerOptions { WriteIndented = true });

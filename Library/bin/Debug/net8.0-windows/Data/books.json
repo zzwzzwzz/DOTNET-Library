@@ -11,7 +11,7 @@
     "BookName": "1984",
     "Author": "George Orwell",
     "Year": "1949",
-    "Availability": "no"
+    "Availability": "yes"
   },
   {
     "BookID": 3,

@@ -44,6 +44,7 @@
             label1.Size = new Size(432, 42);
             label1.TabIndex = 3;
             label1.Text = "Student Check Borrow History";
+            label1.Click += label1_Click;
             // 
             // dateTimePicker1
             // 

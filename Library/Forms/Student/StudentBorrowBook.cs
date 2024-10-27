@@ -10,10 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Library.Models;
+using Library.Interfaces;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Library
 {
-    public partial class StudentBorrowBook : Form
+    public partial class StudentBorrowBook : Form, IBookRepository, IBorrowHistoryRepository
     {
         private static string booksFilePath = "Data/books.json";
         private static string borrowHistoryFilePath = "Data/borrowHistory.json";
@@ -21,7 +23,7 @@ namespace Library
         {
             InitializeComponent();
 
-            // Check if user is logged in user session
+            // Check if user is logged in using user session
             if (UserSession.CurrentUserID == null)
             {
                 MessageBox.Show("User not logged in. Please login first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -65,15 +67,23 @@ namespace Library
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(textBox1.Text, out int bookID))
+            // after confirm button is clicked, it will borrow a book by using BookID
+            BorrowBook(int.Parse(textBox1.Text));
+        }
+
+        // Overloaded BorrowBook to handle borrowing a book by BookID
+        private void BorrowBook(int bookID)
+        {
+
+            if (bookID <= 0)
             {
                 MessageBox.Show("Please enter a valid Book ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Load Books and check if the BookID exists
             List<Book> books = LoadBooks();
-            Book book = books.FirstOrDefault(b => b.BookID == bookID);
+
+            var book = books.FirstOrDefault(b => b.BookID == bookID);
 
             if (book == null)
             {
@@ -81,19 +91,33 @@ namespace Library
                 return;
             }
 
+            // Check if the book availability
             if (book.Availability.Equals("no", StringComparison.OrdinalIgnoreCase))
             {
                 MessageBox.Show("The book is currently not available.", "Unavailable", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
-            book.Availability = "no";
-            SaveBooks(books); // Save updated book availability
-
+            // Check if the user has already borrowed this book and do not returning it
             List<BorrowBook> history = LoadBorrowHistory();
+
+            // using Linq and Lamda search book that alreay borrowed 
+            var existingBorrow = history.FirstOrDefault(b => b.BookID == bookID && b.UserID == UserSession.CurrentUserID && b.ReturnDate == null);
+
+            if (existingBorrow != null)
+            {
+                MessageBox.Show("You have already borrowed this book.", "Duplicate Borrow", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            // Update book availability and save
+            book.Availability = "no";
+            SaveBooks(books); 
+
+            // Add a new borrow data
             history.Add(new BorrowBook
             {
-                UserID = UserSession.CurrentUserID.Value, // Use current user who logging in
+                UserID = UserSession.CurrentUserID.Value,
                 BookID = bookID,
                 BorrowDate = DateTime.Now,
                 ReturnDate = null
@@ -103,7 +127,14 @@ namespace Library
             MessageBox.Show($"Successfully borrowed '{book.BookName}'.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private List<Book> LoadBooks()
+        // Polymorphism using method overloading
+        private void BorrowBook(int bookID, DateTime borrowDate)
+        {
+
+        }
+
+        // Method to load the list of books from JSON
+        public List<Book> LoadBooks()
         {
             if (File.Exists(booksFilePath))
             {
@@ -113,13 +144,15 @@ namespace Library
             return new List<Book>();
         }
 
-        private void SaveBooks(List<Book> books)
+        // Save the updated to JSON file
+        public void SaveBooks(List<Book> books)
         {
             string jsonData = JsonSerializer.Serialize(books);
             File.WriteAllText(booksFilePath, jsonData);
         }
 
-        private List<BorrowBook> LoadBorrowHistory()
+        // Method to load the list of borrowed book
+        public List<BorrowBook> LoadBorrowHistory()
         {
             if (File.Exists(borrowHistoryFilePath))
             {
@@ -129,7 +162,8 @@ namespace Library
             return new List<BorrowBook>();
         }
 
-        private void SaveBorrowHistory(List<BorrowBook> history)
+        //Method to save the updated borrow history to JSON file
+        public void SaveBorrowHistory(List<BorrowBook> history)
         {
             string jsonData = JsonSerializer.Serialize(history, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(borrowHistoryFilePath, jsonData);

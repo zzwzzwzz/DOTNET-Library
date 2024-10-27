@@ -32,6 +32,8 @@ namespace Library
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "dd MMM yyyy h:mm tt";
             dateTimePicker1.Value = DateTime.Now;
+
+            // Initialize the DataGridView  and load borrow history data
             SetupDataGridView();
             LoadBorrowHistoryIntoDataGridView();
         }
@@ -48,33 +50,30 @@ namespace Library
             dataGridView1.Columns.Add("DateOfBorrow", "Date of Borrow");
             dataGridView1.Columns.Add("DateOfReturn", "Date of Return");
 
+           
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
-                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;  //Set columns to auto-fit
+                column.SortMode = DataGridViewColumnSortMode.NotSortable; //disable sort mode
             }
 
-            foreach (DataGridViewColumn column in dataGridView1.Columns)
-            {
-                column.SortMode = DataGridViewColumnSortMode.NotSortable;
-            }
-            // Hide the row headers
+            // Hide the row headers make more space
             dataGridView1.RowHeadersVisible = false;
-
         }
 
+        // Load and display user's borrow history
         private void LoadBorrowHistoryIntoDataGridView()
         {
             try
             {
-                // Load history from JSON files
+                // Load books and borrow history from JSON files
                 List<Book> books = LoadBooks();
                 List<BorrowBook> history = LoadBorrowHistory();
 
                 // Filter history for the current user
                 var userHistory = history.Where(h => h.UserID == UserSession.CurrentUserID).ToList();
 
-                // history data
-                dataGridView1.Rows.Clear();
+                // check each borrowing record for the user
                 foreach (var entry in userHistory)
                 {
                     var book = books.FirstOrDefault(b => b.BookID == entry.BookID);
@@ -91,13 +90,14 @@ namespace Library
                     }
                 }
             }
+            // if catch errors like file not found, Invalid JSON format and etc. show message below
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred while loading borrow history: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        // Load books from JSON file
+        // Method to load the list of books from JSON
         private List<Book> LoadBooks()
         {
             if (File.Exists(booksFilePath))
@@ -108,7 +108,7 @@ namespace Library
             return new List<Book>();
         }
 
-        // Load borrow history from JSON file
+        // Method to load the list of borrowed book
         private List<BorrowBook> LoadBorrowHistory()
         {
             if (File.Exists(borrowHistoryFilePath))
@@ -133,6 +133,11 @@ namespace Library
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dateTimePicker1.Enabled = false;
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
