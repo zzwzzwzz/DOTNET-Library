@@ -14,8 +14,9 @@ namespace Library
 {
     public partial class StudentReturnBook : Form
     {
-        private static string booksFilePath = "Data/books.json";
-        private static string borrowHistoryFilePath = "Data/borrowHistory.json";
+        private static readonly string booksFilePath = "Data/books.json";
+        private static readonly string borrowHistoryFilePath = "Data/borrowHistory.json";
+
         public StudentReturnBook()
         {
             InitializeComponent();
@@ -42,7 +43,7 @@ namespace Library
             dateTimePicker1.Value = DateTime.Now;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             // check if user input is integer
             if (!int.TryParse(textBox1.Text, out int bookID))
@@ -81,50 +82,50 @@ namespace Library
         }
 
         // Method to load the list of books from JSON
-        private List<Book> LoadBooks()
+        private static List<Book> LoadBooks()
         {
             if (File.Exists(booksFilePath))
             {
                 string jsonData = File.ReadAllText(booksFilePath);
-                return JsonSerializer.Deserialize<List<Book>>(jsonData) ?? new List<Book>();
+                return JsonSerializer.Deserialize<List<Book>>(jsonData) ?? [];
             }
-            return new List<Book>();
+            return [];
         }
 
         // Save the updated to JSON file
 
-        private void SaveBooks(List<Book> books)
+        private static void SaveBooks(List<Book> books)
         {
             string jsonData = JsonSerializer.Serialize(books, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(booksFilePath, jsonData);
         }
 
         // Method to load the list of borrowed book
-        private List<BorrowBook> LoadBorrowHistory()
+        private static List<BorrowBook> LoadBorrowHistory()
         {
             if (File.Exists(borrowHistoryFilePath))
             {
                 string jsonData = File.ReadAllText(borrowHistoryFilePath);
-                return JsonSerializer.Deserialize<List<BorrowBook>>(jsonData) ?? new List<BorrowBook>();
+                return JsonSerializer.Deserialize<List<BorrowBook>>(jsonData) ?? [];
             }
-            return new List<BorrowBook>();
+            return [];
         }
 
         //Method to save the updated borrow history to JSON file
-        private void SaveBorrowHistory(List<BorrowBook> history)
+        private static void SaveBorrowHistory(List<BorrowBook> history)
         {
             string jsonData = JsonSerializer.Serialize(history, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(borrowHistoryFilePath, jsonData);
         }
 
         // Back Button Click
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             // Close the current form and go back to the previous one
             this.Close();
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             dateTimePicker1.Enabled = false;
         }
