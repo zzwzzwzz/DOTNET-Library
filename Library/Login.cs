@@ -16,6 +16,16 @@ namespace Library
             textBox2.PasswordChar = '•';
         }
 
+        // When user press enter, it will trigger the Sign In button click event
+        private void TextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                // Call the Sign In button click event handler
+                BtnSignIn_Click(sender, e);
+            }
+        }
+
         // This will be triggered when the "Sign In" button is clicked
         private void BtnSignIn_Click(object sender, EventArgs e)
         {
@@ -136,5 +146,6 @@ namespace Library
         {
 
         }
+
     }
 }

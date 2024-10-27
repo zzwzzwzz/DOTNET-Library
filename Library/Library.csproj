@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="bin\debug\net8.0-windows\data\borrowHistory.json" />
   </ItemGroup>
 
@@ -25,7 +31,6 @@
 
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
