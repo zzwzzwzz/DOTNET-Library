@@ -117,7 +117,7 @@ namespace Library
             // Add a new borrow data
             history.Add(new BorrowBook
             {
-                UserID = UserSession.CurrentUserID.Value,
+                UserID = UserSession.CurrentUserID ?? throw new InvalidOperationException("User must be logged in to borrow books"),
                 BookID = bookID,
                 BorrowDate = DateTime.Now,
                 ReturnDate = null
